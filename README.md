@@ -15,7 +15,7 @@
 https://discordapp.com/channels/987171689165127700/1406289578373021738
 コインロッカーアプリのダウンロード
 App Store:https://apps.apple.com/us/app/itunes-u/id1200289673
-Google Play:https://play.google.com/store/apps/details
+Google Play:https://play.google.com/store/apps/details?id=com.spacer&hl=ja&pli=1
 値段(サイズ(横幅,奥行,高さ) 3時間あたりの値段 最大値)
 サイズ大(410mm,570mm,900mm) 600円/3h 最大1800円
 サイズ中(410mm,570mm,900mm) 400円/3h 最大1200円
