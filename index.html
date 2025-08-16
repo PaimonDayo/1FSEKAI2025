@@ -3,50 +3,313 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>旅行計画管理</title>
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+    <title>1Fのセカイ旅行計画</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>旅行計画管理</h1>
-            <p>あなたの旅行を整理しましょう</p>
+            <h1><i class="fas fa-map-marked-alt"></i> 1Fのセカイ旅行計画</h1>
+            <p>8/29-31 大阪万博＆京都観光</p>
         </header>
 
         <main>
-            <section class="trip-form">
-                <h2>新しい旅行を追加</h2>
-                <form id="tripForm">
-                    <div class="form-group">
-                        <label for="destination">目的地:</label>
-                        <input type="text" id="destination" required>
+            <div class="timeline">
+                <!-- 8/29 大阪万博 -->
+                <div class="day-section" id="day1">
+                    <div class="day-header">
+                        <h2><i class="fas fa-calendar-day"></i> 8/29 (木) - 大阪万博</h2>
+                        <span class="day-status confirmed">確定</span>
                     </div>
-                    <div class="form-group">
-                        <label for="startDate">開始日:</label>
-                        <input type="date" id="startDate" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="endDate">終了日:</label>
-                        <input type="date" id="endDate" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="budget">予算:</label>
-                        <input type="number" id="budget" placeholder="円">
-                    </div>
-                    <div class="form-group">
-                        <label for="notes">メモ:</label>
-                        <textarea id="notes" rows="3"></textarea>
-                    </div>
-                    <button type="submit">旅行を追加</button>
-                </form>
-            </section>
 
-            <section class="trip-list">
-                <h2>計画中の旅行</h2>
-                <div id="tripContainer">
-                    <p class="no-trips">まだ旅行が登録されていません</p>
+                    <div class="timeline-item departure">
+                        <div class="timeline-icon"><i class="fas fa-train"></i></div>
+                        <div class="timeline-content">
+                            <h3>東京駅集合・出発</h3>
+                            <div class="train-options">
+                                <div class="train-option">
+                                    <span class="time">6:24</span>
+                                    <span class="platform">17番線</span>
+                                    <span class="train">のぞみ 新大阪行き</span>
+                                    <span class="arrival">8:48着</span>
+                                </div>
+                                <div class="train-option">
+                                    <span class="time">6:33</span>
+                                    <span class="platform">18番線</span>
+                                    <span class="train">のぞみ 博多行き</span>
+                                    <span class="arrival">9:00着</span>
+                                </div>
+                                <div class="train-option">
+                                    <span class="time">6:42</span>
+                                    <span class="platform">17番線</span>
+                                    <span class="train">のぞみ 新大阪行き</span>
+                                    <span class="arrival">9:06着</span>
+                                </div>
+                                <div class="train-option">
+                                    <span class="time">6:48</span>
+                                    <span class="platform">16番線</span>
+                                    <span class="train">のぞみ 博多行き</span>
+                                    <span class="arrival">9:15着</span>
+                                </div>
+                            </div>
+                            <div class="important-note">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                いずれかの電車で必ず出発
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item luggage">
+                        <div class="timeline-icon"><i class="fas fa-suitcase"></i></div>
+                        <div class="timeline-content">
+                            <h3>荷物預け（万博内持ち込み不可）</h3>
+                            <div class="luggage-options">
+                                <div class="option">
+                                    <h4><i class="fas fa-subway"></i> 本町駅 コインロッカー</h4>
+                                    <p>大阪メトロ御堂筋線（新大阪で乗車券消費）</p>
+                                    <div class="locker-info">
+                                        <div class="locker-size">
+                                            <span class="size">大</span>
+                                            <span class="dimensions">410×570×900mm</span>
+                                            <span class="price">600円/3h（最大1800円）</span>
+                                        </div>
+                                        <div class="locker-size">
+                                            <span class="size">中</span>
+                                            <span class="dimensions">410×570×900mm</span>
+                                            <span class="price">400円/3h（最大1200円）</span>
+                                        </div>
+                                        <div class="locker-size">
+                                            <span class="size">小</span>
+                                            <span class="dimensions">410×570×900mm</span>
+                                            <span class="price">300円/3h（最大900円）</span>
+                                        </div>
+                                    </div>
+                                    <div class="app-info">
+                                        <p><i class="fas fa-mobile-alt"></i> 48時間前から予約可能（クレカ必須）</p>
+                                        <div class="app-links">
+                                            <a href="https://apps.apple.com/us/app/itunes-u/id1200289673" target="_blank" class="app-link ios">
+                                                <i class="fab fa-apple"></i> App Store
+                                            </a>
+                                            <a href="https://play.google.com/store/apps/details" target="_blank" class="app-link android">
+                                                <i class="fab fa-google-play"></i> Google Play
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="option">
+                                    <h4><i class="fas fa-train"></i> 弁天町駅 預かり所</h4>
+                                    <p>JR大阪環状線（弁天町で乗車券消費）</p>
+                                    <div class="storage-info">
+                                        <div class="price-simple">
+                                            <i class="fas fa-yen-sign"></i>
+                                            <span>1000円/日（サイズ関係なし）</span>
+                                        </div>
+                                        <p><i class="fas fa-calendar-check"></i> 現在から予約可能</p>
+                                        <a href="https://cloak.ecbo.io/ja/jpn/city/osaka/1018" target="_blank" class="booking-link">
+                                            <i class="fas fa-external-link-alt"></i> 予約サイト
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item expo">
+                        <div class="timeline-icon"><i class="fas fa-globe"></i></div>
+                        <div class="timeline-content">
+                            <h3>大阪万博</h3>
+                            <div class="expo-route">
+                                <div class="route-step">
+                                    <span class="step-number">1</span>
+                                    <span>大阪メトロ中央線 乗り換え</span>
+                                </div>
+                                <div class="route-step">
+                                    <span class="step-number">2</span>
+                                    <span>夢洲駅着 → 東ゲート</span>
+                                </div>
+                            </div>
+                            <div class="expo-info">
+                                <div class="ticket-info">
+                                    <i class="fas fa-ticket-alt"></i>
+                                    <span>東ゲート10:00以前のチケット必須</span>
+                                </div>
+                                <div class="discord-links">
+                                    <a href="https://discordapp.com/channels/987171689165127700/1406275564817612931" target="_blank" class="discord-link">
+                                        <i class="fab fa-discord"></i> 集団予約用
+                                    </a>
+                                    <a href="https://discordapp.com/channels/987171689165127700/1406269510562091159" target="_blank" class="discord-link">
+                                        <i class="fab fa-discord"></i> チケットID用
+                                    </a>
+                                </div>
+                                <a href="https://ticket.expo2025.or.jp/myticket/" target="_blank" class="ticket-link">
+                                    <i class="fas fa-external-link-alt"></i> マイチケット
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item return">
+                        <div class="timeline-icon"><i class="fas fa-arrow-left"></i></div>
+                        <div class="timeline-content">
+                            <h3>帰路・宿泊先へ</h3>
+                            <div class="return-route">
+                                <div class="departure-time">
+                                    <i class="fas fa-clock"></i>
+                                    <span>夢洲駅出発 21:00</span>
+                                </div>
+                                <div class="route-details">
+                                    <div class="route-step">夢洲駅</div>
+                                    <div class="arrow">→</div>
+                                    <div class="route-step">(本町駅 or 弁天町駅)</div>
+                                    <div class="arrow">→</div>
+                                    <div class="route-step">堺筋本町駅</div>
+                                    <div class="arrow">→</div>
+                                    <div class="route-step">南森町駅</div>
+                                    <div class="arrow">→</div>
+                                    <div class="route-step">ホテル（徒歩10分）</div>
+                                </div>
+                                <div class="travel-time">
+                                    <i class="fas fa-stopwatch"></i>
+                                    <span>所要時間: 約40分</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item hotel">
+                        <div class="timeline-icon"><i class="fas fa-bed"></i></div>
+                        <div class="timeline-content">
+                            <h3>宿泊先</h3>
+                            <div class="hotel-info">
+                                <h4>INOVE VILLA OSAKA</h4>
+                                <div class="hotel-details">
+                                    <div class="detail">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>〒530-0037 大阪府大阪市北区松ヶ枝町4-20</span>
+                                    </div>
+                                    <div class="detail">
+                                        <i class="fas fa-user"></i>
+                                        <span>予約者: 石田</span>
+                                    </div>
+                                    <div class="detail">
+                                        <i class="fas fa-yen-sign"></i>
+                                        <span>6,722円</span>
+                                    </div>
+                                    <a href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/181965" target="_blank" class="hotel-link">
+                                        <i class="fas fa-external-link-alt"></i> 楽天トラベル
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
+
+                <!-- 8/30 自由行動 -->
+                <div class="day-section" id="day2">
+                    <div class="day-header">
+                        <h2><i class="fas fa-calendar-day"></i> 8/30 (金) - 自由行動</h2>
+                        <span class="day-status pending">未定</span>
+                    </div>
+                    
+                    <div class="timeline-item free-day">
+                        <div class="timeline-icon"><i class="fas fa-sun"></i></div>
+                        <div class="timeline-content">
+                            <h3>自由行動</h3>
+                            <p class="free-day-note">詳細な計画は未定です</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8/31 京都観光 -->
+                <div class="day-section" id="day3">
+                    <div class="day-header">
+                        <h2><i class="fas fa-calendar-day"></i> 8/31 (土) - 京都観光</h2>
+                        <span class="day-status pending">未定</span>
+                    </div>
+
+                    <div class="timeline-item kyoto">
+                        <div class="timeline-icon"><i class="fas fa-torii-gate"></i></div>
+                        <div class="timeline-content">
+                            <h3>京都観光</h3>
+                            <p class="kyoto-note">詳細な観光プランは未定です</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item hotel">
+                        <div class="timeline-icon"><i class="fas fa-bed"></i></div>
+                        <div class="timeline-content">
+                            <h3>宿泊先</h3>
+                            <div class="hotel-info">
+                                <h4>花やしき浮舟園</h4>
+                                <div class="hotel-details">
+                                    <div class="detail">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>京都府宇治市宇治塔川２０・２１</span>
+                                    </div>
+                                    <div class="detail">
+                                        <i class="fas fa-user"></i>
+                                        <span>予約者: 吉原</span>
+                                    </div>
+                                    <div class="detail">
+                                        <i class="fas fa-yen-sign"></i>
+                                        <span>6,075円</span>
+                                    </div>
+                                    <a href="https://www.jalan.net/yad304889/" target="_blank" class="hotel-link">
+                                        <i class="fas fa-external-link-alt"></i> じゃらん
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- サイドバー -->
+            <aside class="sidebar">
+                <div class="payment-info">
+                    <h3><i class="fas fa-credit-card"></i> 支払い情報</h3>
+                    <div class="payment-method">
+                        <p><i class="fas fa-mobile-alt"></i> PayPay</p>
+                        <a href="https://discordapp.com/channels/987171689165127700/1406273963616636928" target="_blank" class="payment-link">
+                            <i class="fab fa-discord"></i> Discordリンク
+                        </a>
+                        <small>支払い時にリアクションをお願いします</small>
+                    </div>
+                </div>
+
+                <div class="quick-links">
+                    <h3><i class="fas fa-link"></i> クイックリンク</h3>
+                    <div class="links-grid">
+                        <a href="https://discordapp.com/channels/987171689165127700/1406289578373021738" target="_blank" class="quick-link">
+                            <i class="fab fa-discord"></i>
+                            <span>コインロッカー情報</span>
+                        </a>
+                        <a href="https://ticket.expo2025.or.jp/myticket/" target="_blank" class="quick-link">
+                            <i class="fas fa-ticket-alt"></i>
+                            <span>万博チケット</span>
+                        </a>
+                        <a href="https://cloak.ecbo.io/ja/jpn/city/osaka/1018" target="_blank" class="quick-link">
+                            <i class="fas fa-suitcase"></i>
+                            <span>荷物預かり予約</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="map-section">
+                    <h3><i class="fas fa-map"></i> 地図</h3>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52563.89311320896!2d135.39089299999998!3d34.6949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e0d083d5e25d%3A0x3605d7c4122eb0dc!2z5aSn6Ziq5bqc!5e0!3m2!1sja!2sjp!4v1692000000000!5m2!1sja!2sjp"
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </aside>
         </main>
     </div>
 
