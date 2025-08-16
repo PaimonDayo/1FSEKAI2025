@@ -62,16 +62,15 @@ URL:https://www.jalan.net/yad304889/
 住所:京都府宇治市宇治塔川２０・２１
 
 宿代の支払先
-PayPay:https://discordapp.com/channels/987171689165127700/1406273963616636928にリンクあり→支払い時にリアクション
+PayPay:https://discordapp.com/channels/987171689165127700/1406327743754272819にリンクあり→支払い時にリアクション
 
 
 万博関連
 チケットは東ゲート10:00以前を取得すること。万博はキャッシュレス決済のみなので注意。
 
 集団予約用(必ずチケットIDのスレッドにチケットIDを貼ること、予約が必要なパビリオンのみ募集すること)
-https://discordapp.com/channels/987171689165127700/1406275564817612931
-
+https://discordapp.com/channels/987171689165127700/1406327933110325481
 チケットID用(マイチケット(URL:https://ticket.expo2025.or.jp/myticket/)にログインして確認できる)
-https://discordapp.com/channels/987171689165127700/
+https://discordapp.com/channels/987171689165127700/1406327610132140172
 
 各スレッドには関係のない内容や余計な内容は書かないこと。(予約報告や質問などはOK)
