@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(npm install:*)",
-      "Bash(netlify:*)"
+      "Bash(netlify:*)",
+      "Bash(rg:*)"
     ],
     "deny": []
   }
