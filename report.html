@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大阪・関西万博2025 事前予約パビリオン完全ガイド</title>
+    <style>
+        body {
+            font-family: 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background: #34495e;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        nav li {
+            margin: 0 1rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        nav a:hover {
+            background: #3498db;
+        }
+        
+        main {
+            padding: 2rem;
+        }
+        
+        .category {
+            margin-bottom: 3rem;
+        }
+        
+        .category-header {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            padding: 1rem 2rem;
+            margin: 2rem 0 1rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .category-title {
+            font-size: 1.8rem;
+            margin: 0;
+        }
+        
+        .category-description {
+            margin: 0.5rem 0 0 0;
+            opacity: 0.9;
+            font-style: italic;
+        }
+        
+        .pavilion {
+            background: #f8f9fa;
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-left: 5px solid #3498db;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .pavilion:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+        
+        .pavilion-title {
+            color: #2c3e50;
+            font-size: 1.4rem;
+            margin: 0 0 1rem 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .pavilion-flag {
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .theme {
+            background: #e8f5e8;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: bold;
+            color: #27ae60;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        
+        .content-section {
+            margin: 1rem 0;
+        }
+        
+        .section-title {
+            font-weight: bold;
+            color: #34495e;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .recommended-for {
+            background: #fff3cd;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .advice {
+            background: #d1ecf1;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            border-left: 4px solid #17a2b8;
+        }
+        
+        .tips-section {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 15px;
+        }
+        
+        .tips-title {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .tip-card {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .tip-card h4 {
+            margin-top: 0;
+            color: #fff;
+        }
+        
+        .event-info {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            margin: 2rem 0;
+            border: 2px solid #3498db;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .popularity-badge {
+            background: #e74c3c;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-left: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 0;
+            }
+            
+            main {
+                padding: 1rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 0.2rem 0;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .tips-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+        }
+        
+        .scroll-to-top:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏛️ 大阪・関西万博2025</h1>
+            <div class="subtitle">事前予約パビリオン完全ガイド</div>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#signature">シグネチャーパビリオン</a></li>
+                <li><a href="#domestic">国内パビリオン</a></li>
+                <li><a href="#private">民間パビリオン</a></li>
+                <li><a href="#international">海外パビリオン</a></li>
+                <li><a href="#tips">攻略法</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <section id="signature" class="category">
+                <div class="category-header">
+                    <h2 class="category-title">⭐ シグネチャーパビリオン</h2>
+                    <p class="category-description">万博のメイン会場を彩る8つの特別パビリオン</p>
+                </div>
+                
+                <div class="pavilion">
+                    <h3 class="pavilion-title">Better Co-Being（宮田裕章プロデュース）</h3>
+                    <div class="theme">いのちを響き合わせる</div>
+                    
+                    <div class="content-section">
+                        <div class="section-title">🎯 どんな体験ができる？</div>
+                        <p>多様な価値観を持つ人々との共鳴を通じて、新しい世界の創造を体験できます。経済中心の社会から、環境・人権・健康・平和・教育など多様な側面を考慮した社会への転換を探求します。</p>
+                    </div>
+                    
+                    <div class="recommended-for">
+                        <div class="section-title">👥 おすすめの人</div>
+                        哲学や社会問題に興味がある大人、学生、社会の未来を考えたい家族
+                    </div>
+                    
+                    <div class="advice">
+                        <div class="section-title">💡 アドバイス</div>
+                        考えさせられる内容なので、じっくり体験したい方は時間に余裕を持って訪問を！
+                    </div>
+                </div>
+                
+                <div class="pavilion">
+                    <h3 class="pavilion-title">いのちの未来（石黒浩プロデュース）</h3>
+                    <div class="theme">いのちを拡げる</div>
+                    
+                    <div class="content-section">
+                        <div class="section-title">🎯 どんな体験ができる？</div>
+                        <p>ロボット工学の第一人者がプロデュースする、50〜1000年後の生命の進化を体験できるパビリオン。高度な生命体が社会に幸福をもたらす未来と、そこで待ち受ける自由と喜びを探求します。</p>
+                    </div>
+                    
+                    <div class="recommended-for">
+                        <div class="section-title">👥 おすすめの人</div>
+                        科学技術好き、ロボット・AI に興味がある人、未来を想像するのが好きな人
+                    </div>
+                    
+                    <div class="advice">
+                        <div class="section-title">💡 アドバイス</div>
+                        最新技術を使った展示が多いので、写真撮影OKかどうか事前に確認を！
+                    </div>
+                </div>
+                
+                <div class="pavilion">
+                    <h3 class="pavilion-title">いのちの遊び場 クラゲ館（中島さち子プロデュース）</h3>
+                    <div class="theme">いのちを高める</div>
+                    
+                    <div class="content-section">
+                        <div class="section-title">🎯 どんな体験ができる？</div>
+                        <p>「創造の木」を中心とした遊び場で、爆発的な創造性とコラボレーションを体験。地上階では五感で感じる「音楽」、地下の「いのちの根っこ」では暗闇と360度映像による没入体験が楽しめます。</p>
+                    </div>
+                    
+                    <div class="recommended-for">
+                        <div class="section-title">👥 おすすめの人</div>
+                        子ども、ファミリー、アート好き、五感を使った体験が好きな人
+                    </div>
+                    
+                    <div class="advice">
+                        <div class="section-title">💡 アドバイス</div>
+                        体験型コンテンツが多いので、動きやすい服装で！暗い空間もあるので小さなお子様は注意を。
+                    </div>
+                </div>
+                
+                <div class="pavilion">
+                    <h3 class="pavilion-title">null2（ヌルヌル）（落合陽一プロデュース）<span class="popularity-badge">超人気</span></h3>
+                    <div class="theme">いのちを磨く</div>
+                    
+                    <div class="content-section">
+                        <div class="section-title">🎯 どんな体験ができる？</div>
+                        <p>メディアアーティスト落合陽一による、人類未体験のインタラクティブ構造体。訪問者の身体をデジタル化し、パビリオン内で有機的に変形する「Mirrored Body®」との対話を楽しめます。</p>
+                    </div>
+                    
+                    <div class="recommended-for">
+                        <div class="section-title">👥 おすすめの人</div>
+                        アート好き、最新テクノロジーに興味がある人、ユニークな体験を求める人
+                    </div>
+                    
+                    <div class="advice">
+                        <div class="section-title">💡 アドバイス</div>
+                        30分ごとの入場で1日7回のみ。予約は超激戦なので、複数回チャレンジを！
+                    </div>
+                </div>
+                
+                <div class="pavilion">
+                    <h3 class="pavilion-title">いのち動的平衡館（福岡伸一プロデュース）</h3>
+                    <div class="theme">いのちを知る</div>
+                    
+                    <div class="content-section">
+                        <div class="section-title">🎯 どんな体験ができる？</div>
+                        <p>生物学者福岡伸一による、動的平衡をテーマにした生命の本質を学べる展示。よりよい社会と地球の未来に向けて、いのちを捉え直すフィロソフィーを提供します。</p>
+                    </div>
+                    
+                    <div class="recommended-for">
+                        <div class="section-title">👥 おすすめの人</div>
+                        生物学好き、環境問題に関心がある人、深く考えることが好きな大人
+                    </div>
+                    
+                    <div class="advice">
+                        <div class="section-title">💡 アドバイス</div>
+                        15分ごとの入場制。内容が濃いので事前に福岡伸一さんの著書を読んでおくとより楽しめます！
+                    </div>
+                </div>
+                
+                <div class="pavilion">
+                    <h3 class="pavilion-title">いのちめぐる冒険（河森正治プロデュース）</h3>
+                    <div class="theme">いのちを育む</div>
+                    
+                    <div class="content-section">
+                        <div class="section-title">🎯 どんな体験ができる？</div>
+                        <p>マクロスシリーズで知られるアニメ監督による2つの体験：<br>
+                        ・超時空シアター「499秒 わたしの合体」：宇宙スケールの食物連鎖をVRで体験<br>
+                        ・いのちめぐる冒険 ANIMA：没入感と一体感を行き来する超時空体験</p>
+                    </div>
+                    
+                    <div class="recommended-for">
+                        <div class="section-title">👥 おすすめの人</div>
+                        アニメ好き、VR体験好き、壮大なスケールを感じたい人
+                    </div>
+                    
+                    <div class="advice">
+                        <div class="section-title">💡 アドバイス</div>
+                        VR体験があるので、メガネの方は事前に確認を。酔いやすい人は注意！
+                    </div>
+                </div>
+                
+                <div class="pavilion">
+                    <h3 class="pavilion-title">EARTH MART（小山薫堂プロデュース）</h3>
+                    <div class="theme">いのちをつむぐ</div>
+                    
+                    <div class="content-section">
+                        <div class="section-title">🎯 どんな体験ができる？</div>
+                        <p>未来の食文化をテーマにした体験型スーパーマーケット。環境に優しい未来の食のあり方を楽しく学べます。40〜60分の体験で、10分ごとの入場制です。</p>
+                    </div>
+                    
+                    <div class="recommended-for">
+                        <div class="section-title">👥 おすすめの人</div>
+                        食べることが好きな人、環境問題に興味がある人、家族連れ
+                    </div>
+                    
+                    <div class="advice">
+                        <div class="section-title">💡 アドバイス</div>
+                        食に関する体験なので、空腹時の訪問がおすすめ！お土産情報も要チェック。
+                    </div>
+                </div>
+                
+                <div class="pavilion">
+                    <h3 class="pavilion-title">Dialogue Theater – いのちのあかし –（河瀨直美プロデュース）</h3>
+                    <div class="theme">いのちを守る</div>
+                    
+                    <div class="content-section">
+                        <div class="section-title">🎯 どんな体験ができる？</div>
+                        <p>映画監督河瀨直美による「対話」を通じて世界の分断を明らかにし、解決を試みる実験的な劇場空間。1日5回限定の特別な体験です。</p>
+                    </div>
+                    
+                    <div class="recommended-for">
+                        <div class="section-title">👥 おすすめの人</div>
+                        映画好き、社会問題に関心がある人、対話や議論が好きな人
+                    </div>
+                    
+                    <div class="advice">
+                        <div class="section-title">💡 アドバイス</div>
+                        1日5回のみの貴重な体験。内容が深いので、心の準備をして臨んで！
+                    </div>
+                </div>
+            </section>
+            
+            <section id="domestic" class="category">
+                <div class="category-header">
+                    <h2 class="category-title">🇯🇵 国内パビリオン</h2>
+                    <p class="category-description">日本の技術と文化を体感できる特別空間</p>
+                </div>
+                
+                <div class="pavilion">
+                    <h3 class="pavilion-title">🇯🇵 日本館</h3>
+                    <div class="theme">いのちのリレー</div>
+                    
+                    <div class="content-section">
+                        <div class="section-title">🎯 どんな体験ができる？</div>
+                        <p>すべての動植物が小さな循環を繰り返しながら成り立っていることを円環で表現。万博内の生ゴミを活用したバイオガス発電、日本の発酵食品の仕組み、海藻の姿になったハローキティなど、楽しみながら学べます。</p>
+                    </div>
+                    
+                    <div class="recommended-for">
+                        <div class="section-title">👥 おすすめの人</div>
+                        日本文化に興味がある人、環境問題を学びたい人、ファミリー
+                    </div>
+                    
+                    <div class="advice">
+                        <div class="section-title">💡 アドバイス</div>
+                        各国の中でも特に人気！日本の誇る技術を海外の方にも紹介したくなります。
+                    </div>
+                </div>
+                
+                <div class="pavilion">
+                    <h3 class="pavilion-title">🏥 大阪ヘルスケアパビリオン「Nest for Reborn」</h3>
+                    <div class="theme">25年後の自分との出会い</div>
+                    
+                    <div class="content-section">
+                        <div class="section-title">🎯 どんな体験ができる？</div>
+                        <p>健康データから作成された25年後のアバターと出会い、未来のヘルスケアを体験。心血管・筋骨格・髪・肌など7つの健康データを測定し、進化した「ミライ人間洗濯機」も体験できます。</p>
+                    </div>
+                    
+                    <div class="recommended-for">
+                        <div class="section-title">👥 おすすめの人</div>
+                        健康に関心がある人、未来技術好き、自分の将来が気になる人
+                    </div>
+                    
+                    <div class="advice">
+                        <div class="section-title">💡 アドバイス</div>
+                        健康データの測定があるので、体調の良い日に訪問を！結果は記念になります。
+                    </div>
+                </div>
+                
+                <div class="pavilion">
+                    <h3 class="pavilion-title">🌸 関西パビリオン</h3>
+                    <div class="theme">いのち輝く関西悠久の歴史と現在</div>
+                    
+                    <div class="content-section">
+                        <div class="section-title">🎯 どんな体験ができる？</div>
+                        <p>滋賀・京都・兵庫・奈良・和歌山・鳥取・徳島・福井・三重の9府県が、灯籠をイメージした六角形の建物で関西の魅力を紹介。関西全体と各府県のブースで、歴史と現在を体感できます。</p>
+                    </div>
+                    
+                    <div class="recommended-for">
+                        <div class="section-title">👥 おすすめの人</div>
+                        関西好き、歴史好き、地域文化に興味がある人
+                    </div>
+                    
+                    <div class="advice">
+                        <div class="section-title">💡 アドバイス</div>
+                        各府県の特色が楽しめるので、お気に入りの地域を見つけて旅行計画も立ててみて！
+                    </div>
+                </div>
+                
+                <div class="pavilion">
+                    <h3 class="pavilion-title">🚗 未来社会ショーケース</h3>
+                    <div class="theme">空飛ぶクルマと未来都市</div>
+                    
+                    <div class="content-section">
+                        <div class="section-title">🎯 どんな体験ができる？</div>
+                        <p>空飛ぶクルマの実際の離発着を見学でき、150mの広大なパビリオンに15のアトラクション。空飛ぶクルマのシミュレーションも体験できます。</p>
+                    </div>
+                    
+                    <div class="recommended-for">
+                        <div class="section-title">👥 おすすめの人</div>
+                        乗り物好き、未来技術に興味がある人、子ども、家族連れ
+                    </div>
+                    
+                    <div class="advice">
+                        <div class="section-title">💡 アドバイス</div>
+                        実際の飛行スケジュールは天候に左右されるので、事前にチェックを！
+                    </div>
+                </div>
+            </section>
+            
+            <section id="private" class="category">
+                <div class="category-header">
+                    <h2 class="category-title">🏢 民間パビリオン</h2>
+                    <p class="category-description">企業の最新技術と未来ビジョンを体験</p>
+                </div>
+                
+                <div class="pavilion">
+                    <h3 class="pavilion-title">📱 NTT Pavilion "Natural"</h3>
+                    <div class="theme">時空を超える未来のコミュニケーション</div>
+                    
+                    <div class="content-section">
+                        <div class="section-title">🎯 どんな体験ができる？</div>
+                        <p>NTTが提案する未来のコミュニケーション技術を体験。時空を超えた新しいつながり方を発見できます。</p>
+                    </div>
+                    
+                    <div class="recommended-for">
+                        <div class="section-title">👥 おすすめの人</div>
+                        通信技術好き、未来のコミュニケーションに興味がある人
+                    </div>
+                    
+                    <div class="advice">
+                        <div class="section-title">💡 アドバイス</div>
+                        最新の通信技術を使った展示なので、スマホの充電をフルにして！
+                    </div>
+                </div>
+                
+                <div class="pavilion">
+                    <h3 class="pavilion-title">🎮 パナソニックグループパビリオン「ノモの国」</h3>
+                    <div class="theme">Unlock your nature</div>
+                    
+                    <div class="content-section">
+                        <div class="section-title">🎯 どんな体験ができる？</div>
+                        <p>子どもたちが「自分を信じるチカラと一歩を踏み出す勇気」を得られる体験。想像力が爆発する場所で、無限の可能性を解き放てます。</p>
+                    </div>
+                    
+                    <div class="recommended-for">
+                        <div class="section-title">👥 おすすめの人</div>
+                        子ども、ファミリー、創造性を高めたい人
+                    </div>
+                    
+                    <div class="advice">
+                        <div class="section-title">💡 アドバイス</div>
+                        子ども向け要素が多いですが、大人も童心に帰って楽しめる空間です！
+                    </div>
+                </div>
+                
+                <div class="pavilion">
+                    <h3 class="pavilion-title">🤖 GUNDAM NEXT FUTURE PAVILION</h3>
+                    <div class="theme">もうひとつの宇宙世紀</div>
+                    
+                    <div class="content-section">
+                        <div class="section-title">🎯 どんな体験ができる？</div>
+                        <p>未来のスペースエアポートで、ガンダムと人類が共存する次なる未来を体験。人類が宇宙に生活圏を伸ばした世界観を表現します。</p>
+                    </div>
+                    
+                    <div class="recommended-for">
+                        <div class="section-title">👥 おすすめの人</div>
+                        ガンダムファン、アニメ好き、SF好き、宇宙に興味がある人
+                    </div>
+                    
+                    <div class="advice">
+                        <div class="section-title">💡 アドバイス</div>
+                        ガンダムを知らなくても楽しめる宇宙の未来体験！ファンなら絶対必見です。
+                    </div>
+                </div>
+                
+                <div class="pavilion">
+                    <h3 class="pavilion-title">🚀 三菱未来館</h3>
+                    <div class="theme">いのちの旅</div>
+                    
+                    <div class="content-section">
+                        <div class="section-title">🎯 どんな体験ができる？</div>
+                        <p>シャトルに乗って深海から宇宙への壮大な旅を体験。壮大な「いのちの旅」で宇宙の神秘を感じられます。</p>
+                    </div>
+                    
+                    <div class="recommended-for">
+                        <div class="section-title">👥 おすすめの人</div>
+                        宇宙好き、冒険好き、スケールの大きい体験を求める人
+                    </div>
+                    
+                    <div class="advice">
+                        <div class="section-title">💡 アドバイス</div>
+                        シャトル体験があるので、乗り物酔いしやすい方は事前に準備を！
+                    </div>
+                </div>
+                
+                <div class="pavilion">
+                    <h3 class="pavilion-title">😄 よしもと waraii myraii館</h3>
+                    <div class="theme">笑いの未来</div>
+                    
+                    <div class="content-section">
+                        <div class="section-title">🎯 どんな体験ができる？</div>
+                        <p>吉本興業による笑いをテーマにした体験。関西の笑いの文化と未来を楽しく体感できます。</p>
+                    </div>
+                    
+                    <div class="recommended-for">
+                        <div class="section-title">👥 おすすめの人</div>
+                        お笑い好き、関西文化好き、家族連れ
+                    </div>
+                    
+                    <div class="advice">
+                        <div class="section-title">💡 アドバイス</div>
+                        関西のお笑い文化を知らない方も、この機会にぜひ体験を！
+                    </div>
+                </div>
+            </section>
+            
+            <section id="international" class="category">
+                <div class="category-header">
+                    <h2 class="category-title">🌍 海外パビリオン</h2>
+                    <p class="category-description">世界各国の文化と技術に触れる国際交流</p>
+                </div>
+                
+                <div class="pavilion">
+                    <h3 class="pavilion-title"><span class="pavilion-flag">🇮🇹</span>イタリア館<span class="popularity-badge">超人気</span></h3>
+                    <div class="theme">イタリアの芸術と文化</div>
+                    
+                    <div class="content-section">
+                        <div class="section-title">🎯 どんな体験ができる？</div>
+                        <p>伊東マンショの肖像画、古代ローマのファルネーゼ・アトラス、カラヴァッジョの「キリストの埋葬」、レオナルド・ダ・ヴィンチの原画スケッチなど、本物の芸術作品を鑑賞。5月18日からはミケランジェロの彫刻「キリストの復活」も展示。</p>
+                    </div>
+                    
+                    <div class="recommended-for">
+                        <div class="section-title">👥 おすすめの人</div>
+                        アート好き、歴史好き、イタリア文化に興味がある人
+                    </div>
+                    
+                    <div class="advice">
+                        <div class="section-title">💡 アドバイス</div>
+                        海外パビリオンで最も人気！予約は超激戦なので、複数回チャレンジ必須。
+                    </div>
+                </div>
+                
+                <div class="pavilion">
+                    <h3 class="pavilion-title"><span class="pavilion-flag">🇦🇺</span>オーストラリア館</h3>
+                    <div class="theme">多様性と自然</div>
+                    
+                    <div class="content-section">
+                        <div class="section-title">🎯 どんな体験ができる？</div>
+                        <p>様々なユーカリの木からインスピレーションを得たデザインで、オーストラリアの多様性を表現。2020年東京オリンピックのリサイクル建材を使用した環境配慮型パビリオン。</p>
+                    </div>
+                    
+                    <div class="recommended-for">
+                        <div class="section-title">👥 おすすめの人</div>
+                        自然好き、動物好き、環境問題に関心がある家族連れ
+                    </div>
+                    
+                    <div class="advice">
+                        <div class="section-title">💡 アドバイス</div>
+                        子ども向けの自然・動物テーマなので、ファミリーで楽しめます！
+                    </div>
+                </div>
+                
+                <div class="pavilion">
+                    <h3 class="pavilion-title"><span class="pavilion-flag">🇳🇱</span>オランダ館</h3>
+                    <div class="theme">オランダの技術と文化</div>
+                    
+                    <div class="content-section">
+                        <div class="section-title">🎯 どんな体験ができる？</div>
+                        <p>ミッフィーがお出迎えし、オランダ限定グッズも購入可能。オランダの先進技術と文化を体験できます。</p>
+                    </div>
+                    
+                    <div class="recommended-for">
+                        <div class="section-title">👥 おすすめの人</div>
+                        ミッフィー好き、オランダ文化に興味がある人、キャラクターグッズ好き
+                    </div>
+                    
+                    <div class="advice">
+                        <div class="section-title">💡 アドバイス</div>
+                        ミッフィーグッズは限定品が多いので、お土産として要チェック！
+                    </div>
+                </div>
+                
+                <div class="pavilion">
+                    <h3 class="pavilion-title"><span class="pavilion-flag">🇹🇭</span>タイ館</h3>
+                    <div class="theme">タイの文化と技術</div>
+                    
+                    <div class="content-section">
+                        <div class="section-title">🎯 どんな体験ができる？</div>
+                        <p>インタラクティブな体験と本格的なタイ料理を楽しめます。タイの豊かな文化と最新技術を体感。</p>
+                    </div>
+                    
+                    <div class="recommended-for">
+                        <div class="section-title">👥 おすすめの人</div>
+                        タイ好き、アジア文化に興味がある人、料理好き
+                    </div>
+                    
+                    <div class="advice">
+                        <div class="section-title">💡 アドバイス</div>
+                        本格タイ料理も楽しめるので、食事時間を合わせて訪問するのがおすすめ！
+                    </div>
+                </div>
+                
+                <div class="pavilion">
+                    <h3 class="pavilion-title"><span class="pavilion-flag">🇰🇷</span>大韓民国館<span class="popularity-badge">人気</span></h3>
+                    <div class="theme">韓国の未来と文化</div>
+                    
+                    <div class="content-section">
+                        <div class="section-title">🎯 どんな体験ができる？</div>
+                        <p>K-popやK-beautyなど現代韓国文化と、伝統文化、そして韓国の最新技術を体験できます。トップ5に入る人気パビリオンです。</p>
+                    </div>
+                    
+                    <div class="recommended-for">
+                        <div class="section-title">👥 おすすめの人</div>
+                        K-pop好き、韓国文化好き、美容に興味がある人
+                    </div>
+                    
+                    <div class="advice">
+                        <div class="section-title">💡 アドバイス</div>
+                        非常に人気が高いので、事前予約は必須！韓国グルメも要チェック。
+                    </div>
+                </div>
+                
+                <div class="pavilion">
+                    <h3 class="pavilion-title"><span class="pavilion-flag">🇵🇱</span>ポーランド館<span class="popularity-badge">人気</span></h3>
+                    <div class="theme">ポーランドの技術と文化</div>
+                    
+                    <div class="content-section">
+                        <div class="section-title">🎯 どんな体験ができる？</div>
+                        <p>波型の独特な建築デザインが特徴的なパビリオン。ポーランドの歴史、文化、最新技術を紹介します。</p>
+                    </div>
+                    
+                    <div class="recommended-for">
+                        <div class="section-title">👥 おすすめの人</div>
+                        建築好き、ヨーロッパ文化に興味がある人、歴史好き
+                    </div>
+                    
+                    <div class="advice">
+                        <div class="section-title">💡 アドバイス</div>
+                        建築デザインが話題なので、外観も含めて楽しんで！予約競争率が高いパビリオンです。
+                    </div>
+                </div>
+                
+                <div class="pavilion">
+                    <h3 class="pavilion-title"><span class="pavilion-flag">🌍</span>国際赤十字・赤新月運動館</h3>
+                    <div class="theme">人道支援と平和</div>
+                    
+                    <div class="content-section">
+                        <div class="section-title">🎯 どんな体験ができる？</div>
+                        <p>世界の人道支援活動と平和への取り組みを学べます。国際協力の重要性を体感できる教育的な展示。</p>
+                    </div>
+                    
+                    <div class="recommended-for">
+                        <div class="section-title">👥 おすすめの人</div>
+                        国際協力に興味がある人、平和について考えたい人、学生
+                    </div>
+                    
+                    <div class="advice">
+                        <div class="section-title">💡 アドバイス</div>
+                        社会科見学的な要素もあるので、学習目的での訪問もおすすめ！
+                    </div>
+                </div>
+            </section>
+            
+            <section id="tips" class="tips-section">
+                <h2 class="tips-title">💡 パビリオン予約の攻略法</h2>
+                
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h4>📅 予約システムの種類</h4>
+                        <ul>
+                            <li><strong>2ヶ月前抽選</strong> - 最も確実な方法</li>
+                            <li><strong>7日前抽選</strong> - セカンドチャンス</li>
+                            <li><strong>3日前先着</strong> - 深夜0時開始（2時間以内に埋まる）</li>
+                            <li><strong>当日予約</strong> - 朝9時開始（2時間以内に埋まる）</li>
+                            <li><strong>Myaku-Myakuリワード</strong> - 特別入場枠</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <h4>🎯 予約のコツ</h4>
+                        <ul>
+                            <li>人気パビリオンは複数回チャレンジ必須</li>
+                            <li>公式アプリで混雑状況をチェック</li>
+                            <li>1日に回れるのは7〜10パビリオンが目安</li>
+                            <li>回りたいパビリオンの優先順位を事前に決める</li>
+                            <li>予約開始時刻の5分前にはスタンバイ</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <h4>👕 当日の準備</h4>
+                        <ul>
+                            <li>動きやすい服装と歩きやすい靴</li>
+                            <li>スマホの充電器は必携</li>
+                            <li>水分補給をこまめに</li>
+                            <li>各パビリオンの所要時間を事前チェック</li>
+                            <li>雨天対策も忘れずに</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <h4>⏰ 効率的な回り方</h4>
+                        <ul>
+                            <li>人気パビリオンは朝一番か夕方がおすすめ</li>
+                            <li>食事時間は比較的空いている</li>
+                            <li>エリアごとにまとめて回る</li>
+                            <li>移動時間も計算に入れる</li>
+                            <li>休憩時間も確保する</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="event-info">
+                <h3>🎌 大阪・関西万博2025 開催概要</h3>
+                <p><strong>開催期間：</strong> 2025年4月13日〜10月13日（184日間）<br>
+                <strong>会場：</strong> 大阪・夢洲<br>
+                <strong>アクセス：</strong> 大阪メトロ中央線「夢洲駅」下車<br>
+                <strong>テーマ：</strong> いのち輝く未来社会のデザイン</p>
+                
+                <p style="margin-top: 1rem; font-size: 1.1rem; font-weight: bold;">
+                    事前予約をしっかり取って、未来を体感する素晴らしい万博体験をお楽しみください！ ✨
+                </p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 大阪・関西万博パビリオンガイド - 未来への扉を開こう</p>
+            <p>※ 本ガイドの情報は2025年7月時点のものです。最新情報は公式サイトをご確認ください。</p>
+        </footer>
+    </div>
+    
+    <a href="#" class="scroll-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">↑</a>
+    
+    <script>
+        // スムーススクロール機能
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // トップへ戻るボタンの表示制御
+        window.addEventListener('scroll', function() {
+            const scrollButton = document.querySelector('.scroll-to-top');
+            if (window.pageYOffset > 300) {
+                scrollButton.style.display = 'block';
+            } else {
+                scrollButton.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -40,19 +40,17 @@
                     <h3><i class="fas fa-calendar-alt"></i> 日程</h3>
                     <ul class="nav-links">
                         <li><a href="#day1" class="nav-link active">8/29 万博</a></li>
-                        <li><a href="#day2" class="nav-link">8/30 自由行動</a></li>
-                        <li><a href="#day3" class="nav-link">8/31 京都</a></li>
+                        <li><a href="#day2" class="nav-link">8/30 大阪観光</a></li>
+                        <li><a href="#day3" class="nav-link">8/31 京都観光</a></li>
                     </ul>
                 </div>
                 
                 <div class="nav-section">
                     <h3><i class="fas fa-info-circle"></i> 重要情報</h3>
                     <ul class="nav-links">
-                        <li><a href="#transport" class="nav-link">交通情報</a></li>
-                        <li><a href="#luggage" class="nav-link">荷物預け</a></li>
-                        <li><a href="#accommodation" class="nav-link">宿泊</a></li>
+                        <li><a href="#luggage" class="nav-link">荷物</a></li>
                         <li><a href="#payment" class="nav-link">支払い</a></li>
-                        <li><a href="#expo-info" class="nav-link">万博情報</a></li>
+                        <li><a href="#expo-info" class="nav-link">万博</a></li>
                     </ul>
                 </div>
 
@@ -69,83 +67,29 @@
                 <!-- 8/29 大阪万博 -->
                 <section id="day1" class="day-section">
                     <div class="day-header">
-                        <h2><i class="fas fa-calendar-day"></i> 8月29日（木）- 大阪万博</h2>
-                        <span class="status-badge planned">計画中</span>
+                        <h2><i class="fas fa-calendar-day"></i> 8月29日（金）- 大阪万博</h2>
+                        <span class="status-badge confirmed">計画確定</span>
                     </div>
 
                     <!-- 東京→夢洲 ルート -->
-                    <div id="transport" class="info-card">
-                        <h3><i class="fas fa-route"></i> 東京駅→夢洲 アクセスルート</h3>
-                        
+                    <div class="info-card">
+                        <h3><i class="fas fa-route"></i> 東京駅 → 夢洲 アクセスルート</h3>
                         <div class="route-map-container">
                             <div class="route-header">
-                                <div class="departure-time-badge">
-                                    <i class="fas fa-clock"></i>
-                                    <span>6:24-6:48 出発</span>
-                                </div>
-                                <div class="total-time-badge">
-                                    <i class="fas fa-hourglass-half"></i>
-                                    <span>約3.5時間</span>
-                                </div>
+                                <div class="departure-time-badge"><i class="fas fa-clock"></i><span>6:24-6:48 出発</span></div>
+                                <div class="total-time-badge"><i class="fas fa-hourglass-half"></i><span>約3.5時間</span></div>
                             </div>
-                            
                             <div class="transit-map">
                                 <div class="transit-line">
-                                    <div class="station-stop start">
-                                        <div class="station-circle">
-                                            <i class="fas fa-map-marker-alt"></i>
-                                        </div>
-                                        <div class="station-info">
-                                            <h4>東京駅</h4>
-                                            <span class="line-name shinkansen-line">新幹線のぞみ</span>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="transit-segment shinkansen-line-color">
-                                        <div class="segment-line"></div>
-                                        <div class="segment-label">新幹線 約2.5時間</div>
-                                    </div>
-                                    
-                                    <div class="station-stop transfer">
-                                        <div class="station-circle transfer-circle">
-                                            <i class="fas fa-exchange-alt"></i>
-                                        </div>
-                                        <div class="station-info">
-                                            <h4>新大阪駅</h4>
-                                            <span class="transfer-note">大阪メトロ乗り換え</span>
-                                            <span class="line-name">御堂筋線またはJR線へ</span>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="transit-segment">
-                                        <div class="segment-line" style="background: var(--gray-400);"></div>
-                                        <div class="segment-label">個別ルート</div>
-                                    </div>
-                                    
-                                    <div class="station-stop">
-                                        <div class="station-circle">
-                                            <i class="fas fa-suitcase"></i>
-                                        </div>
-                                        <div class="station-info">
-                                            <h4>本町駅 / 弁天町駅</h4>
-                                            <span class="transfer-note">※荷物預け（選択制）</span>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="transit-segment chuo-line-color">
-                                        <div class="segment-line"></div>
-                                        <div class="segment-label">中央線</div>
-                                    </div>
-                                    
-                                    <div class="station-stop destination">
-                                        <div class="station-circle destination-circle">
-                                            <i class="fas fa-globe"></i>
-                                        </div>
-                                        <div class="station-info">
-                                            <h4>夢洲駅</h4>
-                                            <span class="destination-note">万博会場 東ゲート</span>
-                                        </div>
-                                    </div>
+                                    <div class="station-stop start"><div class="station-circle"><i class="fas fa-train"></i></div><div class="station-info"><h4>東京駅</h4><span class="line-name shinkansen-line">新幹線のぞみ</span></div></div>
+                                    <div class="transit-segment shinkansen-line-color"><div class="segment-line"></div><div class="segment-label">約2.5時間</div></div>
+                                    <div class="station-stop transfer"><div class="station-circle transfer-circle"><i class="fas fa-exchange-alt"></i></div><div class="station-info"><h4>新大阪駅</h4><span class="transfer-note">JR線へ乗り換え（改札は出ない）</span><span class="line-name jr-line">JR東海道本線</span></div></div>
+                                    <div class="transit-segment jr-line-color"><div class="segment-line"></div></div>
+                                    <div class="station-stop transfer"><div class="station-circle transfer-circle"><i class="fas fa-exchange-alt"></i></div><div class="station-info"><h4>大阪駅</h4><span class="transfer-note">JR大阪環状線へ乗り換え</span><span class="line-name jr-loop-line">JR大阪環状線</span></div></div>
+                                    <div class="transit-segment jr-loop-line-color"><div class="segment-line"></div></div>
+                                    <div class="station-stop transfer"><div class="station-circle transfer-circle"><i class="fas fa-suitcase"></i></div><div class="station-info"><h4>弁天町駅</h4><span class="transfer-note">荷物預け / 乗車券はここまで / ICカードに切り替え</span><span class="line-name chuo-line">大阪メトロ中央線へ</span></div></div>
+                                    <div class="transit-segment chuo-line-color"><div class="segment-line"></div></div>
+                                    <div class="station-stop destination"><div class="station-circle destination-circle"><i class="fas fa-globe"></i></div><div class="station-info"><h4>夢洲駅</h4><span class="destination-note">万博会場 東ゲート</span></div></div>
                                 </div>
                             </div>
                         </div>
@@ -153,53 +97,26 @@
 
                     <!-- 新幹線選択 -->
                     <div class="info-card">
-                        <h3><i class="fas fa-train"></i> 新幹線時刻表（6:24発予定）</h3>
+                        <h3><i class="fas fa-train"></i> 新幹線時刻表（東京駅発）</h3>
                         <div class="group-departure-notice">
-                            <div class="notice-header">
-                                <i class="fas fa-users"></i>
-                                <strong>みんなで同じ電車に乗車</strong>
-                            </div>
-                            <p class="notice-text"><span class="highlight">6:24発を予定</span>、下位3本は予備として準備</p>
+                            <div class="notice-header"><i class="fas fa-users"></i><strong>この4本のどれかで必ず出発</strong></div>
+                            <p class="notice-text"><span class="highlight">6:24発</span>を目標にしつつ、柔軟に対応</p>
                         </div>
-                        
                         <div class="train-schedule-compact">
                             <div class="primary-train-card">
-                                <div class="primary-header">
-                                    <i class="fas fa-star"></i>
-                                    <span class="primary-label">メイン</span>
-                                </div>
+                                <div class="primary-header"><i class="fas fa-star"></i><span class="primary-label">第1候補</span></div>
                                 <div class="train-info">
                                     <div class="train-type">のぞみ</div>
-                                    <div class="time-info">
-                                        <span class="departure">6:24</span>
-                                        <i class="fas fa-arrow-right"></i>
-                                        <span class="arrival">8:48</span>
-                                    </div>
+                                    <div class="time-info"><span class="departure">6:24</span><i class="fas fa-arrow-right"></i><span class="arrival">8:48</span></div>
                                     <div class="platform">17番線 新大阪行き</div>
                                 </div>
                             </div>
-                            
                             <div class="backup-trains">
-                                <div class="backup-header">
-                                    <i class="fas fa-shield-alt"></i>
-                                    <span>予備</span>
-                                </div>
+                                <div class="backup-header"><i class="fas fa-shield-alt"></i><span>予備候補</span></div>
                                 <div class="backup-list">
-                                    <div class="backup-train">
-                                        <span class="time">6:33</span>
-                                        <span class="destination">博多行き</span>
-                                        <span class="platform">18番線</span>
-                                    </div>
-                                    <div class="backup-train">
-                                        <span class="time">6:42</span>
-                                        <span class="destination">新大阪行き</span>
-                                        <span class="platform">17番線</span>
-                                    </div>
-                                    <div class="backup-train">
-                                        <span class="time">6:48</span>
-                                        <span class="destination">博多行き</span>
-                                        <span class="platform">16番線</span>
-                                    </div>
+                                    <div class="backup-train"><span class="time">6:33</span><span class="destination">博多行き (9:00着)</span><span class="platform">18番線</span></div>
+                                    <div class="backup-train"><span class="time">6:42</span><span class="destination">新大阪行き (9:06着)</span><span class="platform">17番線</span></div>
+                                    <div class="backup-train"><span class="time">6:48</span><span class="destination">博多行き (9:15着)</span><span class="platform">16番線</span></div>
                                 </div>
                             </div>
                         </div>
@@ -207,269 +124,209 @@
 
                     <!-- 荷物預け -->
                     <div id="luggage" class="info-card">
-                        <h3><i class="fas fa-suitcase-rolling"></i> 荷物預け（万博内持ち込み不可）</h3>
-                        <div class="warning-notice">
-                            <i class="fas fa-ban"></i>
-                            <strong>どちらに置くかは検討中</strong>
-                        </div>
-
+                        <h3><i class="fas fa-suitcase-rolling"></i> 荷物情報</h3>
                         <div class="luggage-options">
-                            <!-- 本町駅オプション -->
-                            <div class="luggage-option">
-                                <div class="option-header">
-                                    <h4><i class="fas fa-subway"></i> 本町駅 コインロッカー</h4>
-                                    <span class="route-info">大阪メトロ御堂筋線（新大阪で乗車券消費）</span>
-                                </div>
-                                
+                            <div class="luggage-option solo">
+                                <div class="option-header"><h4><i class="fas fa-train"></i> 弁天町駅 預かり所</h4><span class="route-info">万博期間中の大きな荷物はここに預けます。</span></div>
                                 <div class="option-details">
                                     <div class="booking-info">
-                                        <p><i class="fas fa-clock"></i> 48時間前から予約可能（クレカ必須）</p>
-                                        <div class="app-links">
-                                            <a href="https://apps.apple.com/us/app/itunes-u/id1200289673" target="_blank" class="app-link ios">
-                                                <i class="fab fa-apple"></i> App Store
-                                            </a>
-                                            <a href="https://play.google.com/store/apps/details?id=com.spacer&hl=ja&pli=1" target="_blank" class="app-link android">
-                                                <i class="fab fa-google-play"></i> Google Play
-                                            </a>
-                                        </div>
-                                        <a href="https://discordapp.com/channels/987171689165127700/1406289578373021738" target="_blank" class="discord-link">
-                                            <i class="fab fa-discord"></i> 
-                                            <div class="discord-link-info">
-                                                <span>コインロッカー予約方法</span>
-                                                <small>アプリの使い方・注意点</small>
-                                            </div>
-                                        </a>
+                                        <p><i class="fas fa-calendar-check"></i> 事前予約推奨（クレカ必須）</p>
+                                        <a href="https://cloak.ecbo.io/ja/jpn/city/osaka/1018" target="_blank" class="booking-btn"><i class="fas fa-external-link-alt"></i> ecbo cloak 予約サイト</a>
+                                        <a href="https://discordapp.com/channels/987171689165127700/1406470927788671036" target="_blank" class="discord-link"><i class="fab fa-discord"></i><div class="discord-link-info"><span>預かり所の使用方法</span><small>予約サイトの使い方・注意点</small></div></a>
                                     </div>
-
-                                    <div class="pricing-cards">
-                                        <div class="pricing-card small">
-                                            <div class="pricing-header">
-                                                <span class="size-label">小</span>
-                                                <span class="dimensions">410×570×900mm</span>
-                                            </div>
-                                            <div class="pricing-body">
-                                                <div class="price-info">
-                                                    <span class="price">300円</span>
-                                                    <span class="period">/3時間</span>
-                                                </div>
-                                                <div class="max-price">最大 900円</div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="pricing-card medium">
-                                            <div class="pricing-header">
-                                                <span class="size-label">中</span>
-                                                <span class="dimensions">410×570×900mm</span>
-                                            </div>
-                                            <div class="pricing-body">
-                                                <div class="price-info">
-                                                    <span class="price">400円</span>
-                                                    <span class="period">/3時間</span>
-                                                </div>
-                                                <div class="max-price">最大 1,200円</div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="pricing-card large">
-                                            <div class="pricing-header">
-                                                <span class="size-label">大</span>
-                                                <span class="dimensions">410×570×900mm</span>
-                                            </div>
-                                            <div class="pricing-body">
-                                                <div class="price-info">
-                                                    <span class="price">600円</span>
-                                                    <span class="period">/3時間</span>
-                                                </div>
-                                                <div class="max-price">最大 1,800円</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- 弁天町駅オプション -->
-                            <div class="luggage-option">
-                                <div class="option-header">
-                                    <h4><i class="fas fa-train"></i> 弁天町駅 預かり所</h4>
-                                    <span class="route-info">JR大阪環状線（弁天町で乗車券消費）</span>
-                                </div>
-                                
-                                <div class="option-details">
-                                    <div class="booking-info">
-                                        <p><i class="fas fa-calendar-check"></i> 現在から予約可能（クレカ必須）</p>
-                                        <a href="https://cloak.ecbo.io/ja/jpn/city/osaka/1018" target="_blank" class="booking-btn">
-                                            <i class="fas fa-external-link-alt"></i> 予約サイト
-                                        </a>
-                                        <a href="https://discordapp.com/channels/987171689165127700/1406470927788671036" target="_blank" class="discord-link">
-                                            <i class="fab fa-discord"></i> 
-                                            <div class="discord-link-info">
-                                                <span>預かり所の使用方法</span>
-                                                <small>予約サイトの使い方・注意点</small>
-                                            </div>
-                                        </a>
-                                    </div>
-
                                     <div class="simple-pricing">
-                                        <div class="price-card">
-                                            <i class="fas fa-yen-sign"></i>
-                                            <span class="price">1,000円/日</span>
-                                            <small>サイズ関係なし</small>
-                                        </div>
+                                        <div class="price-card"><i class="fas fa-yen-sign"></i><span class="price">1,000円/日</span><small>スーツケース・バッグなどサイズ不問</small></div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="delivery-card">
+                            <h4><i class="fas fa-box-open"></i> 3日目の宅急便利用</h4>
+                            <p>最終日(8/31)に宇治駅から荷物を宅急便で送ることで、手ぶらで観光できます。詳細は<a href="#day3">3日目の行程</a>を参照してください。</p>
                         </div>
                     </div>
 
                     <!-- 万博情報 -->
                     <div id="expo-info" class="info-card">
                         <h3><i class="fas fa-globe"></i> 大阪万博 重要事項</h3>
-                        
                         <div class="expo-essentials">
-                            <div class="essential-item">
-                                <i class="fas fa-ticket-alt"></i>
-                                <div class="essential-content">
-                                    <strong>チケット</strong>
-                                    <span>東ゲート10:00以前必須</span>
-                                </div>
-                            </div>
-                            <div class="essential-item">
-                                <i class="fas fa-credit-card"></i>
-                                <div class="essential-content">
-                                    <strong>支払い</strong>
-                                    <span>キャッシュレス決済のみ</span>
-                                </div>
-                            </div>
+                            <div class="essential-item"><i class="fas fa-ticket-alt"></i><div class="essential-content"><strong>チケット</strong><span>東ゲート10:00以前を取得</span></div></div>
+                            <div class="essential-item"><i class="fas fa-credit-card"></i><div class="essential-content"><strong>支払い</strong><span>キャッシュレス決済のみ</span></div></div>
                         </div>
-
                         <div class="discord-sections">
-                            <h4><i class="fab fa-discord"></i> Discord連絡先</h4>
+                            <h4><i class="fab fa-discord"></i> Discord連絡・注意事項</h4>
                             <div class="discord-links">
-                                <a href="https://discordapp.com/channels/987171689165127700/1406327933110325481" target="_blank" class="discord-btn group-reservation">
-                                    <i class="fas fa-users"></i>
-                                    <div>
-                                        <strong>パビリオン集団予約</strong>
-                                        <small>8/20まで募集｜その後は個別対応</small>
-                                    </div>
-                                </a>
-                                <a href="https://discordapp.com/channels/987171689165127700/1406327610132140172" target="_blank" class="discord-btn ticket-id">
-                                    <i class="fas fa-id-card"></i>
-                                    <div>
-                                        <strong>チケットID共有</strong>
-                                        <small>万博チケットのIDを投稿</small>
-                                    </div>
-                                </a>
+                                <a href="https://discordapp.com/channels/987171689165127700/1406327933110325481" target="_blank" class="discord-btn group-reservation"><i class="fas fa-users"></i><div><strong>パビリオン集団予約</strong><small>予約が必要なパビリオンのみ募集</small></div></a>
+                                <a href="https://discordapp.com/channels/987171689165127700/1406327610132140172" target="_blank" class="discord-btn ticket-id"><i class="fas fa-id-card"></i><div><strong>チケットID共有</strong><small>予約のため、自分のIDを投稿</small></div></a>
                             </div>
+                             <div class="discord-rules"><i class="fas fa-exclamation-triangle"></i><span>各スレッドには関係のない内容や余計な内容は書かないこと。(予約報告や質問などはOK)</span></div>
                         </div>
                     </div>
 
                     <!-- 帰路 -->
                     <div class="info-card">
-                        <h3><i class="fas fa-route"></i> 夢洲→宿泊先 アクセスルート</h3>
-                        
+                        <h3><i class="fas fa-route"></i> 夢洲 → 宿泊先 アクセスルート</h3>
                         <div class="route-map-container">
                             <div class="route-header">
-                                <div class="departure-time-badge">
-                                    <i class="fas fa-clock"></i>
-                                    <span>21:00 出発</span>
-                                </div>
-                                <div class="total-time-badge">
-                                    <i class="fas fa-hourglass-half"></i>
-                                    <span>約40分</span>
-                                </div>
+                                <div class="departure-time-badge"><i class="fas fa-clock"></i><span>21:00 夢洲出発</span></div>
+                                <div class="total-time-badge"><i class="fas fa-hourglass-half"></i><span>約40分</span></div>
                             </div>
-                            
                             <div class="transit-map">
                                 <div class="transit-line">
-                                    <div class="station-stop start">
-                                        <div class="station-circle">
-                                            <i class="fas fa-map-marker-alt"></i>
-                                        </div>
-                                        <div class="station-info">
-                                            <h4>夢洲駅</h4>
-                                            <span class="line-name chuo-line">大阪メトロ中央線</span>
+                                    <div class="station-stop start"><div class="station-circle"><i class="fas fa-map-marker-alt"></i></div><div class="station-info"><h4>夢洲駅</h4><span class="line-name chuo-line">大阪メトロ中央線</span></div></div>
+                                    <div class="transit-segment chuo-line-color"><div class="segment-line"></div></div>
+                                    <div class="station-stop"><div class="station-circle"><i class="fas fa-suitcase"></i></div><div class="station-info"><h4>弁天町駅</h4><span class="transfer-note">荷物回収</span></div></div>
+                                    <div class="transit-segment chuo-line-color"><div class="segment-line"></div></div>
+                                    <div class="station-stop transfer"><div class="station-circle transfer-circle"><i class="fas fa-exchange-alt"></i></div><div class="station-info"><h4>堺筋本町駅</h4><span class="transfer-note">中央線→堺筋線 乗り換え</span><span class="line-name sakaisuji-line">大阪メトロ堺筋線</span></div></div>
+                                    <div class="transit-segment sakaisuji-line-color"><div class="segment-line"></div></div>
+                                    <div class="station-stop"><div class="station-circle"><i class="fas fa-subway"></i></div><div class="station-info"><h4>南森町駅</h4></div></div>
+                                    <div class="transit-segment walking-color"><div class="segment-line"></div><div class="segment-label">徒歩 10分</div></div>
+                                    <div class="station-stop destination"><div class="station-circle destination-circle"><i class="fas fa-bed"></i></div><div class="station-info"><h4>INOVE VILLA OSAKA</h4><span class="destination-note">1泊目の宿</span></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 宿泊情報 -->
+                    <div class="hotel-card day-end-card">
+                        <div class="hotel-header"><h3>8月29日の夜 (1泊目)</h3></div>
+                        <div class="hotel-info">
+                            <h4>INOVE VILLA OSAKA</h4>
+                            <div class="hotel-details">
+                                <div class="detail-row"><i class="fas fa-map-marker-alt"></i><span>〒530-0037 大阪府大阪市北区松ヶ枝町4-20</span><button class="copy-btn" data-copy="〒530-0037 大阪府大阪市北区松ヶ枝町4-20"><i class="fas fa-copy"></i></button></div>
+                                <div class="detail-row"><i class="fas fa-user"></i><span>予約者: 石田</span></div>
+                                <div class="detail-row"><i class="fas fa-yen-sign"></i><span>6,722円</span></div>
+                            </div>
+                            <a href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/181965" target="_blank" class="hotel-link rakuten"><i class="fas fa-external-link-alt"></i> 楽天トラベルで確認</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 8/30 大阪観光 -->
+                <section id="day2" class="day-section">
+                    <div class="day-header">
+                        <h2><i class="fas fa-calendar-day"></i> 8月30日（土）- 大阪観光</h2>
+                        <span class="status-badge confirmed">2グループ別行動</span>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-map-signs"></i> グループ別行動プラン</h3>
+                        <div class="team-plans">
+                            <!-- 海遊館組 -->
+                            <div class="team-plan-card">
+                                <div class="team-plan-header"><h4><i class="fas fa-water"></i> 海遊館組</h4></div>
+                                <div class="team-plan-body">
+                                    <div class="transit-map compact">
+                                        <div class="transit-line">
+                                            <div class="station-stop start"><div class="station-circle"><i class="fas fa-bed"></i></div><div class="station-info"><h4>ホテル出発</h4></div></div>
+                                            <div class="transit-segment walking-color"><div class="segment-line"></div><div class="segment-label">徒歩8分</div></div>
+                                            <div class="station-stop"><div class="station-circle"><i class="fas fa-subway"></i></div><div class="station-info"><h4>南森町駅</h4><span class="line-name sakaisuji-line">堺筋線</span></div></div>
+                                            <div class="transit-segment sakaisuji-line-color"><div class="segment-line"></div><div class="segment-label">6分 / 190円</div></div>
+                                            <div class="station-stop transfer"><div class="station-circle transfer-circle"><i class="fas fa-exchange-alt"></i></div><div class="station-info"><h4>堺筋本町駅</h4><span class="line-name chuo-line">中央線へ</span></div></div>
+                                            <div class="transit-segment chuo-line-color"><div class="segment-line"></div><div class="segment-label">11分 / 240円</div></div>
+                                            <div class="station-stop"><div class="station-circle"><i class="fas fa-suitcase"></i></div><div class="station-info"><h4>弁天町駅</h4><span class="transfer-note">荷物を預ける (+10分)</span></div></div>
+                                            <div class="transit-segment chuo-line-color"><div class="segment-line"></div><div class="segment-label">8分 / 240円</div></div>
+                                            <div class="station-stop"><div class="station-circle"><i class="fas fa-subway"></i></div><div class="station-info"><h4>大阪港駅</h4></div></div>
+                                            <div class="transit-segment walking-color"><div class="segment-line"></div></div>
+                                            <div class="station-stop destination"><div class="station-circle destination-circle"><i class="fas fa-fish"></i></div><div class="station-info"><h4>海遊館</h4><span class="destination-note">観光 (入場料2,900円)</span></div></div>
+                                            <div class="transit-segment chuo-line-color"><div class="segment-line"></div><div class="segment-label">14分 / 290円</div></div>
+                                            <div class="station-stop transfer"><div class="station-circle transfer-circle"><i class="fas fa-exchange-alt"></i></div><div class="station-info"><h4>堺筋本町駅</h4><span class="line-name sakaisuji-line">堺筋線へ</span></div></div>
+                                            <div class="transit-segment sakaisuji-line-color"><div class="segment-line"></div><div class="segment-label">3分 / 190円</div></div>
+                                            <div class="station-stop"><div class="station-circle"><i class="fas fa-subway"></i></div><div class="station-info"><h4>日本橋駅</h4></div></div>
+                                            <div class="transit-segment walking-color"><div class="segment-line"></div><div class="segment-label">徒歩7分</div></div>
+                                            <div class="station-stop destination"><div class="station-circle destination-circle"><i class="fas fa-utensils"></i></div><div class="station-info"><h4>道頓堀</h4><span class="destination-note">観光 (他組と合流？)</span></div></div>
+                                            <div class="transit-segment walking-color"><div class="segment-line"></div><div class="segment-label">徒歩7分</div></div>
+                                            <div class="station-stop"><div class="station-circle"><i class="fas fa-subway"></i></div><div class="station-info"><h4>日本橋駅</h4><span class="line-name sakaisuji-line">堺筋線</span></div></div>
+                                            <div class="transit-segment sakaisuji-line-color"><div class="segment-line"></div><div class="segment-label">3分 / 190円</div></div>
+                                            <div class="station-stop transfer"><div class="station-circle transfer-circle"><i class="fas fa-exchange-alt"></i></div><div class="station-info"><h4>堺筋本町駅</h4><span class="line-name chuo-line">中央線へ</span></div></div>
+                                            <div class="transit-segment chuo-line-color"><div class="segment-line"></div><div class="segment-label">2分 / 190円</div></div>
+                                            <div class="station-stop"><div class="station-circle"><i class="fas fa-subway"></i></div><div class="station-info"><h4>谷町四丁目駅</h4></div></div>
+                                            <div class="transit-segment walking-color"><div class="segment-line"></div><div class="segment-label">徒歩6分</div></div>
+                                            <div class="station-stop destination"><div class="station-circle destination-circle"><i class="fas fa-fort-awesome"></i></div><div class="station-info"><h4>大阪城公園</h4><span class="destination-note">観光 (入場料600円)</span></div></div>
+                                            <div class="transit-segment walking-color"><div class="segment-line"></div><div class="segment-label">徒歩7分</div></div>
+                                            <div class="station-stop"><div class="station-circle"><i class="fas fa-subway"></i></div><div class="station-info"><h4>谷町四丁目駅</h4><span class="line-name chuo-line">中央線</span></div></div>
+                                            <div class="transit-segment chuo-line-color"><div class="segment-line"></div><div class="segment-label">10分 / 240円</div></div>
+                                            <div class="station-stop"><div class="station-circle"><i class="fas fa-suitcase"></i></div><div class="station-info"><h4>弁天町駅</h4><span class="transfer-note">荷物回収 (+10分)</span><span class="line-name jr-loop-line">JR大阪環状線へ</span></div></div>
+                                            <div class="transit-segment jr-loop-line-color"><div class="segment-line"></div><div class="segment-label">8分 / 180円</div></div>
+                                            <div class="station-stop transfer"><div class="station-circle transfer-circle"><i class="fas fa-exchange-alt"></i></div><div class="station-info"><h4>大阪駅</h4><span class="line-name jr-line">JR東海道本線へ</span></div></div>
+                                            <div class="transit-segment jr-line-color"><div class="segment-line"></div><div class="segment-label">29分 / 580円</div></div>
+                                            <div class="station-stop transfer"><div class="station-circle transfer-circle"><i class="fas fa-exchange-alt"></i></div><div class="station-info"><h4>京都駅</h4><span class="line-name nara-line">JR奈良線へ</span></div></div>
+                                            <div class="transit-segment nara-line-color"><div class="segment-line"></div><div class="segment-label">23分 / 240円</div></div>
+                                            <div class="station-stop"><div class="station-circle"><i class="fas fa-train"></i></div><div class="station-info"><h4>宇治駅</h4></div></div>
+                                            <div class="transit-segment walking-color"><div class="segment-line"></div><div class="segment-label">徒歩16分</div></div>
+                                            <div class="station-stop destination"><div class="station-circle destination-circle"><i class="fas fa-bed"></i></div><div class="station-info"><h4>花やしき浮舟園</h4><span class="destination-note">2泊目の宿</span></div></div>
                                         </div>
                                     </div>
-                                    
-                                    <div class="transit-segment chuo-line-color">
-                                        <div class="segment-line"></div>
-                                        <div class="segment-label">中央線</div>
-                                    </div>
-                                    
-                                    <div class="station-stop">
-                                        <div class="station-circle">
-                                            <i class="fas fa-suitcase"></i>
-                                        </div>
-                                        <div class="station-info">
-                                            <h4>本町駅 / 弁天町駅</h4>
-                                            <span class="transfer-note">※荷物回収（預け場所により選択）</span>
-                                            <span class="line-name chuo-line">大阪メトロ中央線</span>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="transit-segment chuo-line-color">
-                                        <div class="segment-line"></div>
-                                        <div class="segment-label">中央線</div>
-                                    </div>
-                                    
-                                    <div class="station-stop transfer">
-                                        <div class="station-circle transfer-circle">
-                                            <i class="fas fa-exchange-alt"></i>
-                                        </div>
-                                        <div class="station-info">
-                                            <h4>堺筋本町駅</h4>
-                                            <span class="transfer-note">中央線→堺筋線 乗り換え</span>
-                                            <span class="line-name sakaisuji-line">大阪メトロ堺筋線</span>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="transit-segment sakaisuji-line-color">
-                                        <div class="segment-line"></div>
-                                        <div class="segment-label">堺筋線</div>
-                                    </div>
-                                    
-                                    <div class="station-stop">
-                                        <div class="station-circle">
-                                            <i class="fas fa-subway"></i>
-                                        </div>
-                                        <div class="station-info">
-                                            <h4>南森町駅</h4>
-                                            <span class="line-name sakaisuji-line">大阪メトロ堺筋線</span>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="transit-segment walking-color">
-                                        <div class="segment-line walking-line"></div>
-                                        <div class="segment-label">徒歩 10分</div>
-                                    </div>
-                                    
-                                    <div class="station-stop destination">
-                                        <div class="station-circle destination-circle">
-                                            <i class="fas fa-bed"></i>
-                                        </div>
-                                        <div class="station-info">
-                                            <h4>INOVE VILLA OSAKA</h4>
-                                            <span class="destination-note">宿泊先</span>
+                                </div>
+                            </div>
+                            <!-- あべのハルカス組 -->
+                            <div class="team-plan-card">
+                                <div class="team-plan-header"><h4><i class="fas fa-city"></i> あべのハルカス組</h4></div>
+                                <div class="team-plan-body">
+                                    <div class="transit-map compact">
+                                        <div class="transit-line">
+                                            <div class="station-stop start"><div class="station-circle"><i class="fas fa-bed"></i></div><div class="station-info"><h4>ホテル出発</h4></div></div>
+                                            <div class="transit-segment walking-color"><div class="segment-line"></div><div class="segment-label">徒歩8分</div></div>
+                                            <div class="station-stop"><div class="station-circle"><i class="fas fa-subway"></i></div><div class="station-info"><h4>南森町駅</h4><span class="line-name sakaisuji-line">堺筋線</span></div></div>
+                                            <div class="transit-segment sakaisuji-line-color"><div class="segment-line"></div><div class="segment-label">6分 / 190円</div></div>
+                                            <div class="station-stop transfer"><div class="station-circle transfer-circle"><i class="fas fa-exchange-alt"></i></div><div class="station-info"><h4>堺筋本町駅</h4><span class="line-name chuo-line">中央線へ</span></div></div>
+                                            <div class="transit-segment chuo-line-color"><div class="segment-line"></div><div class="segment-label">2分 / 0円(合算)</div></div>
+                                            <div class="station-stop"><div class="station-circle"><i class="fas fa-suitcase"></i></div><div class="station-info"><h4>本町駅</h4><span class="transfer-note">荷物を預ける (+10分)</span></div></div>
+                                            <div class="transit-segment chuo-line-color"><div class="segment-line"></div><div class="segment-label">2分 / 240円</div></div>
+                                            <div class="station-stop transfer"><div class="station-circle transfer-circle"><i class="fas fa-exchange-alt"></i></div><div class="station-info"><h4>堺筋本町駅</h4><span class="line-name sakaisuji-line">堺筋線へ</span></div></div>
+                                            <div class="transit-segment sakaisuji-line-color"><div class="segment-line"></div><div class="segment-label">5分 / 0円(合算)</div></div>
+                                            <div class="station-stop"><div class="station-circle"><i class="fas fa-subway"></i></div><div class="station-info"><h4>恵美須町駅</h4></div></div>
+                                            <div class="transit-segment walking-color"><div class="segment-line"></div><div class="segment-label">徒歩5分</div></div>
+                                            <div class="station-stop destination"><div class="station-circle destination-circle"><i class="fas fa-broadcast-tower"></i></div><div class="station-info"><h4>通天閣</h4><span class="destination-note">観光</span></div></div>
+                                            <div class="transit-segment walking-color"><div class="segment-line"></div><div class="segment-label">徒歩9分</div></div>
+                                            <div class="station-stop"><div class="station-circle"><i class="fas fa-subway"></i></div><div class="station-info"><h4>動物園前駅</h4><span class="line-name midosuji-line">御堂筋線</span></div></div>
+                                            <div class="transit-segment midosuji-line-color"><div class="segment-line"></div><div class="segment-label">2分 / 190円</div></div>
+                                            <div class="station-stop"><div class="station-circle"><i class="fas fa-subway"></i></div><div class="station-info"><h4>天王寺駅</h4></div></div>
+                                            <div class="transit-segment walking-color"><div class="segment-line"></div></div>
+                                            <div class="station-stop destination"><div class="station-circle destination-circle"><i class="fas fa-building"></i></div><div class="station-info"><h4>あべのハルカス</h4><span class="destination-note">観光</span></div></div>
+                                            <div class="transit-segment midosuji-line-color"><div class="segment-line"></div><div class="segment-label">6分 / 240円</div></div>
+                                            <div class="station-stop"><div class="station-circle"><i class="fas fa-subway"></i></div><div class="station-info"><h4>なんば駅</h4></div></div>
+                                            <div class="transit-segment walking-color"><div class="segment-line"></div><div class="segment-label">徒歩5分</div></div>
+                                            <div class="station-stop destination"><div class="station-circle destination-circle"><i class="fas fa-utensils"></i></div><div class="station-info"><h4>道頓堀</h4><span class="destination-note">観光 (他組と合流？)</span></div></div>
+                                            <div class="transit-segment walking-color"><div class="segment-line"></div><div class="segment-label">徒歩9分</div></div>
+                                            <div class="station-stop"><div class="station-circle"><i class="fas fa-subway"></i></div><div class="station-info"><h4>日本橋駅</h4><span class="line-name sakaisuji-line">堺筋線</span></div></div>
+                                            <div class="transit-segment sakaisuji-line-color"><div class="segment-line"></div><div class="segment-label">3分 / 190円</div></div>
+                                            <div class="station-stop transfer"><div class="station-circle transfer-circle"><i class="fas fa-exchange-alt"></i></div><div class="station-info"><h4>堺筋本町駅</h4><span class="line-name chuo-line">中央線へ</span></div></div>
+                                            <div class="transit-segment chuo-line-color"><div class="segment-line"></div><div class="segment-label">1分 / 0円(合算)</div></div>
+                                            <div class="station-stop"><div class="station-circle"><i class="fas fa-subway"></i></div><div class="station-info"><h4>谷町四丁目駅</h4></div></div>
+                                            <div class="transit-segment walking-color"><div class="segment-line"></div><div class="segment-label">徒歩6分</div></div>
+                                            <div class="station-stop destination"><div class="station-circle destination-circle"><i class="fas fa-fort-awesome"></i></div><div class="station-info"><h4>大阪城公園</h4><span class="destination-note">観光 (入場料600円)</span></div></div>
+                                            <div class="transit-segment walking-color"><div class="segment-line"></div><div class="segment-label">徒歩7分</div></div>
+                                            <div class="station-stop"><div class="station-circle"><i class="fas fa-subway"></i></div><div class="station-info"><h4>谷町四丁目駅</h4><span class="line-name chuo-line">中央線</span></div></div>
+                                            <div class="transit-segment chuo-line-color"><div class="segment-line"></div><div class="segment-label">3分 / 190円</div></div>
+                                            <div class="station-stop"><div class="station-circle"><i class="fas fa-suitcase"></i></div><div class="station-info"><h4>本町駅</h4><span class="transfer-note">荷物回収 (+10分)</span><span class="line-name midosuji-line">御堂筋線へ</span></div></div>
+                                            <div class="transit-segment midosuji-line-color"><div class="segment-line"></div><div class="segment-label">5分 / 190円</div></div>
+                                            <div class="station-stop"><div class="station-circle"><i class="fas fa-subway"></i></div><div class="station-info"><h4>梅田駅</h4></div></div>
+                                            <div class="transit-segment walking-color"><div class="segment-line"></div><div class="segment-label">徒歩2分</div></div>
+                                            <div class="station-stop transfer"><div class="station-circle transfer-circle"><i class="fas fa-exchange-alt"></i></div><div class="station-info"><h4>大阪駅</h4><span class="line-name jr-line">JR東海道本線へ</span></div></div>
+                                            <div class="transit-segment jr-line-color"><div class="segment-line"></div><div class="segment-label">29分 / 580円</div></div>
+                                            <div class="station-stop transfer"><div class="station-circle transfer-circle"><i class="fas fa-exchange-alt"></i></div><div class="station-info"><h4>京都駅</h4><span class="line-name nara-line">JR奈良線へ</span></div></div>
+                                            <div class="transit-segment nara-line-color"><div class="segment-line"></div><div class="segment-label">23分 / 240円</div></div>
+                                            <div class="station-stop"><div class="station-circle"><i class="fas fa-train"></i></div><div class="station-info"><h4>宇治駅</h4></div></div>
+                                            <div class="transit-segment walking-color"><div class="segment-line"></div><div class="segment-label">徒歩16分</div></div>
+                                            <div class="station-stop destination"><div class="station-circle destination-circle"><i class="fas fa-bed"></i></div><div class="station-info"><h4>花やしき浮舟園</h4><span class="destination-note">2泊目の宿</span></div></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-
-                <!-- 8/30 自由行動 -->
-                <section id="day2" class="day-section">
-                    <div class="day-header">
-                        <h2><i class="fas fa-calendar-day"></i> 8月30日（金）- 自由行動</h2>
-                        <span class="status-badge pending">未定</span>
-                    </div>
-                    
-                    <div class="info-card">
-                        <div class="free-day-placeholder">
-                            <i class="fas fa-sun"></i>
-                            <h3>自由行動日</h3>
-                            <p>詳細な計画は未定です。<br>自由に大阪を楽しみましょう！</p>
+                    <!-- 宿泊情報 -->
+                    <div class="hotel-card day-end-card">
+                        <div class="hotel-header"><h3>8月30日の夜 (2泊目)</h3></div>
+                        <div class="hotel-info">
+                            <h4>花やしき浮舟園</h4>
+                            <div class="hotel-details">
+                                <div class="detail-row"><i class="fas fa-map-marker-alt"></i><span>京都府宇治市宇治塔川２０・２１</span><button class="copy-btn" data-copy="京都府宇治市宇治塔川２０・２１"><i class="fas fa-copy"></i></button></div>
+                                <div class="detail-row"><i class="fas fa-user"></i><span>予約者: 吉原</span></div>
+                                <div class="detail-row"><i class="fas fa-yen-sign"></i><span>6,075円</span></div>
+                            </div>
+                            <a href="https://www.jalan.net/yad304889/" target="_blank" class="hotel-link jalan"><i class="fas fa-external-link-alt"></i> じゃらんで確認</a>
                         </div>
                     </div>
                 </section>
@@ -477,109 +334,85 @@
                 <!-- 8/31 京都観光 -->
                 <section id="day3" class="day-section">
                     <div class="day-header">
-                        <h2><i class="fas fa-calendar-day"></i> 8月31日（土）- 京都観光</h2>
-                        <span class="status-badge pending">未定</span>
+                        <h2><i class="fas fa-calendar-day"></i> 8月31日（日）- 京都観光・帰路</h2>
+                        <span class="status-badge confirmed">計画確定</span>
                     </div>
 
                     <div class="info-card">
-                        <div class="free-day-placeholder">
-                            <i class="fas fa-torii-gate"></i>
-                            <h3>京都観光</h3>
-                            <p>詳細な観光プランは未定です。<br>京都の魅力を存分に味わいましょう！</p>
+                        <h3><i class="fas fa-route"></i> 京都観光 → 東京駅 ルート</h3>
+                        <div class="route-map-container">
+                             <div class="transit-map">
+                                <div class="transit-line">
+                                    <div class="station-stop start"><div class="station-circle"><i class="fas fa-bed"></i></div><div class="station-info"><h4>花やしき浮舟園</h4><span class="transfer-note">出発</span></div></div>
+                                    <div class="transit-segment walking-color"><div class="segment-line"></div><div class="segment-label">徒歩4分</div></div>
+                                    <div class="station-stop destination"><div class="station-circle destination-circle"><i class="fas fa-torii-gate"></i></div><div class="station-info"><h4>平等院</h4><span class="destination-note">観光</span></div></div>
+                                    <div class="transit-segment walking-color"><div class="segment-line"></div><div class="segment-label">徒歩7分</div></div>
+                                    <div class="station-stop"><div class="station-circle"><i class="fas fa-box-open"></i></div><div class="station-info"><h4>宇治駅エリア</h4><span class="transfer-note">コンビニで荷物を宅急便発送</span></div></div>
+                                    <div class="transit-segment nara-line-color"><div class="segment-line"></div><div class="segment-label">16分 / 240円</div></div>
+                                    <div class="station-stop"><div class="station-circle"><i class="fas fa-train"></i></div><div class="station-info"><h4>稲荷駅</h4></div></div>
+                                    <div class="transit-segment walking-color"><div class="segment-line"></div></div>
+                                    <div class="station-stop destination"><div class="station-circle destination-circle"><i class="fas fa-torii-gate"></i></div><div class="station-info"><h4>伏見稲荷大社</h4><span class="destination-note">観光</span></div></div>
+                                    <div class="transit-segment nara-line-color"><div class="segment-line"></div><div class="segment-label">4分 / 150円</div></div>
+                                    <div class="station-stop"><div class="station-circle"><i class="fas fa-train"></i></div><div class="station-info"><h4>東福寺駅</h4></div></div>
+                                    <div class="transit-segment walking-color"><div class="segment-line"></div><div class="segment-label">徒歩5分</div></div>
+                                    <div class="station-stop destination"><div class="station-circle destination-circle"><i class="fas fa-temple"></i></div><div class="station-info"><h4>東福寺</h4><span class="destination-note">観光</span></div></div>
+                                    <div class="transit-segment bus-line-color"><div class="segment-line"></div><div class="segment-label">市バス 10分 / 230円</div></div>
+                                    <div class="station-stop"><div class="station-circle"><i class="fas fa-bus"></i></div><div class="station-info"><h4>清水道</h4></div></div>
+                                    <div class="transit-segment walking-color"><div class="segment-line"></div><div class="segment-label">徒歩11分</div></div>
+                                    <div class="station-stop destination"><div class="station-circle destination-circle"><i class="fas fa-temple"></i></div><div class="station-info"><h4>清水寺</h4><span class="destination-note">観光</span></div></div>
+                                    <div class="transit-segment walking-color"><div class="segment-line"></div><div class="segment-label">徒歩9分</div></div>
+                                    <div class="station-stop"><div class="station-circle"><i class="fas fa-bus"></i></div><div class="station-info"><h4>清水道</h4></div></div>
+                                    <div class="transit-segment bus-line-color"><div class="segment-line"></div><div class="segment-label">市バス 13分 / 230円</div></div>
+                                    <div class="station-stop"><div class="station-circle"><i class="fas fa-map-signs"></i></div><div class="station-info"><h4>烏丸七条</h4><span class="transfer-note">京都駅へ</span></div></div>
+                                    <div class="transit-segment walking-color"><div class="segment-line"></div></div>
+                                    <div class="station-stop transfer"><div class="station-circle transfer-circle"><i class="fas fa-exchange-alt"></i></div><div class="station-info"><h4>京都駅</h4><span class="transfer-note">新幹線へ乗り換え</span></div></div>
+                                    <div class="transit-segment shinkansen-line-color"><div class="segment-line"></div><div class="segment-label">のぞみ456号 19:13発</div></div>
+                                    <div class="station-stop destination"><div class="station-circle destination-circle"><i class="fas fa-train"></i></div><div class="station-info"><h4>東京駅</h4><span class="destination-note">21:24着 お疲れ様でした！</span></div></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </section>
-
-                <!-- 宿泊情報 -->
-                <section id="accommodation" class="info-section">
-                    <h2><i class="fas fa-bed"></i> 宿泊情報</h2>
-                    
-                    <div class="accommodation-grid">
-                        <!-- 8/29の夜 -->
-                        <div class="hotel-card">
-                            <div class="hotel-header">
-                                <h3>8月29日の夜</h3>
-                                <span class="night-indicator">1泊目</span>
-                            </div>
-                            <div class="hotel-info">
-                                <h4>INOVE VILLA OSAKA</h4>
-                                <div class="hotel-details">
-                                    <div class="detail-row">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                        <span>〒530-0037 大阪府大阪市北区松ヶ枝町4-20</span>
-                                        <button class="copy-btn" data-copy="〒530-0037 大阪府大阪市北区松ヶ枝町4-20">
-                                            <i class="fas fa-copy"></i>
-                                        </button>
-                                    </div>
-                                    <div class="detail-row">
-                                        <i class="fas fa-user"></i>
-                                        <span>予約者: 石田</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <i class="fas fa-yen-sign"></i>
-                                        <span>6,722円</span>
-                                    </div>
+                    <div class="info-card">
+                        <h3><i class="fas fa-box-open"></i> 宅急便情報 (ヤマト運輸)</h3>
+                        <div class="size-definition">
+                            <div class="size-diagram">
+                                <div class="cube">
+                                    <div class="face front"></div><div class="face back"></div><div class="face right"></div><div class="face left"></div><div class="face top"></div><div class="face bottom"></div>
                                 </div>
-                                <a href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/181965" target="_blank" class="hotel-link rakuten">
-                                    <i class="fas fa-external-link-alt"></i> 楽天トラベル
-                                </a>
+                                <span>縦+横+高さ=合計</span>
+                            </div>
+                            <div class="size-text">
+                                <p>荷物の大きさ(cm)は、<strong>縦・横・高さの3辺の合計</strong>です。下記テーブルでサイズと重さを確認し、宇治駅前のコンビニから発送してください。</p>
+                                <a href="https://www.kuronekoyamato.co.jp/ytc/customer/send/search/payment/size/" target="_blank" class="source-link"><i class="fas fa-external-link-alt"></i> サイズの測り方の詳細</a>
                             </div>
                         </div>
-
-                        <!-- 8/30の夜 -->
-                        <div class="hotel-card">
-                            <div class="hotel-header">
-                                <h3>8月30日の夜</h3>
-                                <span class="night-indicator">2泊目</span>
-                            </div>
-                            <div class="hotel-info">
-                                <h4>花やしき浮舟園</h4>
-                                <div class="hotel-details">
-                                    <div class="detail-row">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                        <span>京都府宇治市宇治塔川２０・２１</span>
-                                        <button class="copy-btn" data-copy="京都府宇治市宇治塔川２０・２１">
-                                            <i class="fas fa-copy"></i>
-                                        </button>
-                                    </div>
-                                    <div class="detail-row">
-                                        <i class="fas fa-user"></i>
-                                        <span>予約者: 吉原</span>
-                                    </div>
-                                    <div class="detail-row">
-                                        <i class="fas fa-yen-sign"></i>
-                                        <span>6,075円</span>
-                                    </div>
-                                </div>
-                                <a href="https://www.jalan.net/yad304889/" target="_blank" class="hotel-link jalan">
-                                    <i class="fas fa-external-link-alt"></i> じゃらん
-                                </a>
-                            </div>
+                        <div class="table-container">
+                            <table class="pricing-table">
+                                <thead><tr><th>サイズ</th><th>荷物の大きさ</th><th>重さ</th><th>料金(関西→関東)</th></tr></thead>
+                                <tbody>
+                                    <tr><td data-label="サイズ">60</td><td data-label="大きさ">60cm以内</td><td data-label="重さ">2kgまで</td><td data-label="料金">1,060円</td></tr>
+                                    <tr><td data-label="サイズ">80</td><td data-label="大きさ">80cm以内</td><td data-label="重さ">5kgまで</td><td data-label="料金">1,350円</td></tr>
+                                    <tr><td data-label="サイズ">100</td><td data-label="大きさ">100cm以内</td><td data-label="重さ">10kgまで</td><td data-label="料金">1,650円</td></tr>
+                                    <tr><td data-label="サイズ">120</td><td data-label="大きさ">120cm以内</td><td data-label="重さ">15kgまで</td><td data-label="料金">1,970円</td></tr>
+                                    <tr><td data-label="サイズ">140</td><td data-label="大きさ">140cm以内</td><td data-label="重さ">20kgまで</td><td data-label="料金">2,310円</td></tr>
+                                    <tr><td data-label="サイズ">160</td><td data-label="大きさ">160cm以内</td><td data-label="重さ">25kgまで</td><td data-label="料金">2,630円</td></tr>
+                                    <tr><td data-label="サイズ">180</td><td data-label="大きさ">180cm以内</td><td data-label="重さ">30kgまで</td><td data-label="料金">3,730円</td></tr>
+                                    <tr><td data-label="サイズ">200</td><td data-label="大きさ">200cm以内</td><td data-label="重さ">30kgまで</td><td data-label="料金">4,500円</td></tr>
+                                </tbody>
+                            </table>
                         </div>
+                        <a href="https://www.kuronekoyamato.co.jp/ytc/search/payment/result_01.html?SERVICE=TK&PARA_HATSU_CHIIKI=%E9%96%A2%E8%A5%BF&PARA_CHAKU_CHIIKI=%E9%96%A2%E6%9D%B1" target="_blank" class="source-link"><i class="fas fa-external-link-alt"></i> 料金の詳細はこちら</a>
                     </div>
                 </section>
 
                 <!-- 支払い情報 -->
                 <section id="payment" class="info-section">
                     <h2><i class="fas fa-credit-card"></i> 支払い情報</h2>
-                    
                     <div class="payment-card">
-                        <div class="payment-method">
-                            <i class="fas fa-mobile-alt"></i>
-                            <h3>PayPay</h3>
-                        </div>
+                        <div class="payment-method"><i class="fab fa-paypal"></i><h3>PayPay</h3></div>
                         <div class="payment-details">
-                            <a href="https://discordapp.com/channels/987171689165127700/1406327743754272819" target="_blank" class="payment-link">
-                                <i class="fab fa-discord"></i> 
-                                <div class="payment-link-info">
-                                    <span>PayPay送金リンク</span>
-                                    <small>宿泊費・交通費の支払い用</small>
-                                </div>
-                            </a>
-                            <p class="payment-note">
-                                <i class="fas fa-bell"></i>
-                                支払い時にリアクションをお願いします
-                            </p>
+                            <a href="https://discordapp.com/channels/987171689165127700/1406327743754272819" target="_blank" class="payment-link"><i class="fab fa-discord"></i><div class="payment-link-info"><span>PayPay送金リンク (Discord)</span><small>宿泊費・交通費の支払い用</small></div></a>
+                            <p class="payment-note"><i class="fas fa-bell"></i>支払い後にDiscordでリアクションをお願いします</p>
                         </div>
                     </div>
                 </section>
@@ -590,9 +423,9 @@
         <footer class="main-footer">
             <div class="footer-content">
                 <div class="footer-links">
-                    <a href="#day1">万博</a>
-                    <a href="#day2">自由行動</a>
-                    <a href="#day3">京都</a>
+                    <a href="#day1">8/29 万博</a>
+                    <a href="#day2">8/30 大阪観光</a>
+                    <a href="#day3">8/31 京都観光</a>
                 </div>
             </div>
         </footer>

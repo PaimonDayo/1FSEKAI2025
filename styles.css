@@ -1998,10 +1998,8 @@ tr:last-child td:last-child {
     font-size: 0.75rem;
     font-weight: 500;
     border: 1px solid var(--gray-300);
-
 }
 
-/* 新幹線時刻表コンパクトデザイン */
 .train-schedule-compact {
     display: grid;
     gap: 1.5rem;
@@ -2029,19 +2027,20 @@ tr:last-child td:last-child {
     opacity: 0.9;
 }
 
-.train-info {
+.primary-train-card .train-info {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    justify-content: space-between;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
-.train-type {
+.primary-train-card .train-type {
     font-size: 1.25rem;
     font-weight: 700;
 }
 
-.time-info {
+.primary-train-card .time-info {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -2049,12 +2048,9 @@ tr:last-child td:last-child {
     font-weight: 700;
 }
 
-.platform {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 0.5rem 1rem;
-    border-radius: var(--radius);
+.primary-train-card .platform {
     font-size: 0.875rem;
-    font-weight: 500;
+    opacity: 0.9;
 }
 
 .backup-trains {
@@ -2100,11 +2096,7 @@ tr:last-child td:last-child {
 }
 
 .backup-train .platform {
-    background: var(--gray-100);
-    padding: 0.25rem 0.5rem;
-    border-radius: var(--radius-sm);
-    font-size: 0.75rem;
-    color: var(--gray-600);
+    color: var(--gray-500);
 }
 
 /* 荷物預け料金カード */
@@ -2131,17 +2123,31 @@ tr:last-child td:last-child {
 }
 
 .pricing-header {
-    padding-bottom: 0.75rem;
     margin-bottom: 0.75rem;
-    border-bottom: 1px solid var(--gray-200);
 }
 
 .size-label {
-    display: block;
-    font-size: 1.125rem;
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-xl);
+    font-size: 0.75rem;
     font-weight: 600;
-    color: var(--gray-900);
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.pricing-card.small .size-label {
+    background: var(--success-color);
+    color: white;
+}
+
+.pricing-card.medium .size-label {
+    background: var(--warning-color);
+    color: white;
+}
+
+.pricing-card.large .size-label {
+    background: var(--danger-color);
+    color: white;
 }
 
 .dimensions {
@@ -2154,24 +2160,42 @@ tr:last-child td:last-child {
     margin-bottom: 0.5rem;
 }
 
-.price {
+.pricing-body .price {
     font-size: 1.25rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--gray-900);
 }
 
-.period {
+.pricing-body .period {
     font-size: 0.75rem;
-    color: var(--gray-600);
+    color: var(--gray-500);
 }
 
 .max-price {
     font-size: 0.75rem;
-    color: var(--gray-500);
-    background: var(--gray-100);
-    padding: 0.25rem 0.5rem;
-    border-radius: var(--radius-sm);
-    display: inline-block;
+    color: var(--gray-600);
+    font-weight: 500;
+}
+
+/* 警告通知 */
+.warning-notice {
+    background: #fffbeb;
+    color: #b45309;
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid #fcd34d;
+}
+
+.warning-notice i {
+    font-size: 1.25rem;
+}
+
+.warning-notice strong {
+    font-weight: 600;
 }
 
 /* 万博重要事項 */
@@ -2186,56 +2210,233 @@ tr:last-child td:last-child {
     display: flex;
     align-items: center;
     gap: 1rem;
-    background: var(--gray-50);
     padding: 1.5rem;
     border-radius: var(--radius-lg);
-    border: 1px solid var(--gray-200);
+    border: 2px solid;
+}
+
+.essential-item:nth-child(1) {
+    border-color: var(--primary-color);
+    background: #eef2ff;
+    color: var(--primary-dark);
+}
+
+.essential-item:nth-child(2) {
+    border-color: var(--accent-color);
+    background: #ecfeff;
+    color: #0e7490;
 }
 
 .essential-item i {
     font-size: 1.5rem;
-    color: var(--primary-color);
 }
 
 .essential-content strong {
     display: block;
     font-weight: 600;
-    color: var(--gray-900);
     margin-bottom: 0.25rem;
 }
 
 .essential-content span {
     font-size: 0.875rem;
-    color: var(--gray-600);
 }
 
-/* 警告通知 */
-.warning-notice {
-    background: #fffbeb;
-    color: #b45309;
-    border: 2px solid #f59e0b;
-    border-radius: var(--radius-lg);
-    padding: 1.5rem;
+/* 宅急便情報 */
+.delivery-info-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.delivery-card {
+    background: var(--gray-50);
+    padding: 2rem;
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--gray-200);
+}
+
+.delivery-card h4 {
     margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
+    color: var(--gray-900);
     font-weight: 600;
 }
 
-.warning-notice i {
+.size-definition {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.size-diagram {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    background: white;
+    border: 2px dashed var(--gray-400);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--gray-500);
+    font-size: 0.875rem;
+}
+
+.size-text p {
+    margin: 0;
+    color: var(--gray-700);
+    font-size: 0.875rem;
+}
+
+.source-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.source-link:hover {
+    text-decoration: underline;
+}
+
+/* 8/30 大阪観光: チームプラン */
+.team-plans {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.team-plan-card {
+    background: var(--gray-50);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    border: 1px solid var(--gray-200);
+    display: flex;
+    flex-direction: column;
+}
+
+.team-plan-header h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
     font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin: 0 0 1.5rem 0;
 }
 
-
-/* 重要情報のハイライト用スタイル */
-#expo-info.info-card,
-#luggage.info-card {
-    background-color: #fefce8; /* 薄い黄色 */
-    border-left: 4px solid #f59e0b; /* 左側にアクセントボーダー */
+.team-plan-body {
+    flex-grow: 1;
 }
 
-#expo-info.info-card:hover,
-#luggage.info-card:hover {
-    background-color: #fef9c3;
+.transit-map.compact .station-info {
+    padding: 0.5rem 0;
+}
+.transit-map.compact .segment-label {
+    font-size: 0.7rem;
+}
+
+/* 路線図の追加スタイル */
+.line-name.jr-line { background: #0072bc; color: white; }
+.line-name.jr-loop-line { background: #f04a00; color: white; }
+.line-name.midosuji-line { background: #e60012; color: white; }
+.line-name.nara-line { background: #6c2685; color: white; }
+
+.transit-segment.jr-line-color .segment-line { background: #0072bc; }
+.transit-segment.jr-loop-line-color .segment-line { background: #f04a00; }
+.transit-segment.midosuji-line-color .segment-line { background: #e60012; }
+.transit-segment.nara-line-color .segment-line { background: #6c2685; }
+.transit-segment.bus-line-color .segment-line { background: #ff9a00; }
+
+/* 荷物情報カード */
+.delivery-card {
+    margin-top: 2rem;
+    background: var(--gray-50);
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+}
+.delivery-card h4 {
+    margin:0 0 0.5rem 0;
+    font-weight: 600;
+}
+.delivery-card p {
+    font-size: 0.875rem;
+    color: var(--gray-600);
+    margin: 0;
+}
+
+/* 日の終わりの宿泊カード */
+.hotel-card.day-end-card {
+    margin-top: 3rem;
+    border-top: 4px solid var(--primary-color);
+}
+
+/* 宅急便サイズ図解 */
+.size-diagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    min-height: 150px;
+}
+
+.size-diagram span {
+    font-weight: 600;
+    color: var(--gray-700);
+}
+
+.cube {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(30deg);
+    animation: rotateCube 15s infinite linear;
+}
+
+@keyframes rotateCube {
+    from { transform: rotateX(-30deg) rotateY(30deg); }
+    to { transform: rotateX(-30deg) rotateY(390deg); }
+}
+
+.face {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 1px solid var(--gray-400);
+    background: rgba(99, 102, 241, 0.1);
+    opacity: 0.8;
+}
+
+.face.front  { transform: rotateY(0deg)   translateZ(40px); }
+.face.back   { transform: rotateY(180deg) translateZ(40px); }
+.face.right  { transform: rotateY(90deg)  translateZ(40px); }
+.face.left   { transform: rotateY(-90deg) translateZ(40px); }
+.face.top    { transform: rotateX(90deg)  translateZ(40px); }
+.face.bottom { transform: rotateX(-90deg) translateZ(40px); }
+
+/* 支払い方法アイコン */
+.payment-method i.fa-paypal {
+    color: #00457C; /* PayPayではないが、一般的な決済アイコンとして */
+    font-size: 2.5rem;
+}
+
+/* Font Awesome アイコンの追加 */
+.fa-fish::before { content: "\f578"; }
+.fa-broadcast-tower::before { content: "\f519"; }
+.fa-fort-awesome::before { content: "\f286"; }
+.fa-landmark::before { content: "\f66f"; }
+
+
+/* モバイル対応 */
+@media (max-width: 900px) {
+    .team-plans {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 768px) {
+    .size-definition {
+        flex-direction: column;
+    }
 }
